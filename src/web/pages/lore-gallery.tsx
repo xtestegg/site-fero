@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useLocation } from "wouter";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Stars background component
 function Stars({ count = 60 }: { count?: number }) {
@@ -215,13 +214,13 @@ export default function LoreGallery() {
                 onClick={handlePrevious}
                 className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2 font-bold"
               >
-                <ChevronLeft size={20} /> PREV
+                ← PREV
               </button>
               <button
                 onClick={handleNext}
                 className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2 font-bold"
               >
-                NEXT <ChevronRight size={20} />
+                NEXT →
               </button>
             </div>
           </div>
