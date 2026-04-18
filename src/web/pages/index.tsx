@@ -51,11 +51,14 @@ export default function Home() {
     const audio = audioRef.current;
     if (!audio) return;
 
+    audio.volume = 0.5;
     if (isPlaying) {
-      audio.volume = 0.5;
-      audio.play().catch(() => {
-        // Playback failed
-      });
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          console.log("Audio playback failed");
+        });
+      }
     } else {
       audio.pause();
     }
@@ -425,7 +428,7 @@ export default function Home() {
       </footer>
 
       {/* Background Music */}
-      <audio ref={audioRef} loop volume={0.5}>
+      <audio ref={audioRef} loop>
         <source src="/bg-music.mp3" type="audio/mpeg" />
       </audio>
 
