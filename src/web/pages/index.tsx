@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // CDN Asset URLs
 const ASSETS = {
@@ -45,9 +45,24 @@ function Stars({ count = 60 }: { count?: number }) {
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.play().catch(() => {
+        // Autoplay blocked - user must interact first
+      });
+    } else {
+      audio.pause();
+    }
+  }, [isPlaying]);
 
   const handleEnter = () => {
     setShowContent(true);
+    setIsPlaying(true);
   };
 
   const toggleMusic = () => {
@@ -399,6 +414,11 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Background Music */}
+      <audio ref={audioRef} loop volume={0.5}>
+        <source src="/bg-music.mp3" type="audio/mpeg" />
+      </audio>
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap');
