@@ -107,7 +107,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* ===== HERO SECTION ===== */}
-      <section className="relative min-h-screen py-20 px-4 overflow-hidden bg-black">
+      <section className="relative py-20 px-4 overflow-hidden bg-black">
         {/* Starfield Background */}
         <div className="absolute inset-0">
           <Stars count={100} />
@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* ===== NFT PREVIEW SECTION ===== */}
-      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden" id="preview">
+      <section className="relative py-20 px-4 bg-black overflow-hidden" id="preview">
         <div className="absolute inset-0">
           <Stars count={100} />
         </div>
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* ===== COLLECTION SECTION ===== */}
-      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+      <section className="relative py-20 px-4 bg-black overflow-hidden">
         <div className="absolute inset-0">
           <Stars count={100} />
         </div>
@@ -289,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* ===== LORE SECTION ===== */}
-      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+      <section className="relative py-20 px-4 bg-black overflow-hidden">
         <div className="absolute inset-0">
           <Stars count={100} />
         </div>
@@ -354,7 +354,7 @@ export default function Home() {
       </section>
 
       {/* ===== AIRDROP SECTION ===== */}
-      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+      <section className="relative py-20 px-4 bg-black overflow-hidden">
         <div className="absolute inset-0">
           <Stars count={100} />
         </div>
