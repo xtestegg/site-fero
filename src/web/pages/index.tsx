@@ -71,18 +71,19 @@ export default function Home() {
 
   const handleEnter = () => {
     setShowContent(true);
-    // Play music when entering if enabled
-    if (audioRef.current && isPlaying) {
+    // Only play music if it's enabled (isPlaying is true)
+    if (isPlaying && audioRef.current) {
       audioRef.current.volume = 0.5;
       audioRef.current.currentTime = 0;
       const playPromise = audioRef.current.play();
       if (playPromise !== undefined) {
-        playPromise.then(() => {
-          console.log("Music started on ENTER");
-        }).catch((err) => {
+        playPromise.catch((err) => {
           console.error("Music play failed:", err);
         });
       }
+    } else if (!isPlaying && audioRef.current) {
+      // Make sure audio is paused if music is OFF
+      audioRef.current.pause();
     }
   };
 
