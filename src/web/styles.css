@@ -118,3 +118,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide Runable badge */
+[class*="runable"],
+[id*="runable"],
+div:has(> button:has(svg[data-icon*="bot"])),
+button:has(> :contains("Made with")),
+button:has(> svg):has(+ :contains("Runable")) {
+  display: none !important;
+}
