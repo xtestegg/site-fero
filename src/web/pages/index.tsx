@@ -44,56 +44,15 @@ function Stars({ count = 60 }: { count?: number }) {
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // Try to play immediately
-    audio.volume = 0.5;
-    const playPromise = audio.play();
-    if (playPromise) {
-      playPromise.then(() => {
-        setIsPlaying(true);
-      }).catch(() => {
-        // Autoplay blocked - add listener for first user interaction
-        setIsPlaying(false);
-      });
-    }
-
-    // Listen for first user interaction to unlock audio
-    const handleUserInteraction = () => {
-      if (audio && !isPlaying) {
-        audio.play().then(() => {
-          setIsPlaying(true);
-        }).catch(() => {
-          // Still blocked
-        });
-      }
-      // Remove listener after first interaction
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('keydown', handleUserInteraction);
-      document.removeEventListener('touchstart', handleUserInteraction);
-    };
-
-    document.addEventListener('click', handleUserInteraction);
-    document.addEventListener('keydown', handleUserInteraction);
-    document.addEventListener('touchstart', handleUserInteraction);
-
-    return () => {
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('keydown', handleUserInteraction);
-      document.removeEventListener('touchstart', handleUserInteraction);
-    };
-  }, [isPlaying]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
     if (isPlaying) {
+      audio.volume = 0.5;
       audio.play().catch(() => {
         // Playback failed
       });
@@ -104,24 +63,15 @@ export default function Home() {
 
   const handleEnter = () => {
     setShowContent(true);
-    // Start music on user interaction
-    if (audioRef.current) {
+    // Ensure music plays when entering
+    if (audioRef.current && isPlaying) {
       audioRef.current.volume = 0.5;
       audioRef.current.play().catch(() => {});
-      setIsPlaying(true);
     }
   };
 
   const toggleMusic = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        audioRef.current.play().catch(() => {});
-        setIsPlaying(true);
-      }
-    }
+    setIsPlaying(!isPlaying);
   };
 
   if (!showContent) {
@@ -168,10 +118,10 @@ export default function Home() {
             className={`flex items-center gap-2 px-6 py-3 rounded-full border-2 font-bold transition-all ${
               isPlaying 
                 ? "border-green-500 text-green-400 bg-green-500/10 hover:bg-green-500/20" 
-                : "border-purple-500 text-purple-400 hover:bg-purple-500/20"
+                : "border-red-500 text-red-400 bg-red-500/10 hover:bg-red-500/20"
             }`}
           >
-            {isPlaying ? "🔊 MUSIC ON" : "🔇 CLICK TO PLAY MUSIC"}
+            {isPlaying ? "🔊 MUSIC ON" : "🔇 MUSIC OFF"}
           </button>
         </div>
       </div>
