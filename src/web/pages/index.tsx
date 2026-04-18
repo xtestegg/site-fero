@@ -142,9 +142,13 @@ export default function Home() {
           {/* Music Toggle */}
           <button
             onClick={toggleMusic}
-            className="flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all"
+            className={`flex items-center gap-2 px-6 py-3 rounded-full border-2 font-bold transition-all ${
+              isPlaying 
+                ? "border-green-500 text-green-400 bg-green-500/10 hover:bg-green-500/20" 
+                : "border-purple-500 text-purple-400 hover:bg-purple-500/20"
+            }`}
           >
-            {isPlaying ? "🔊 MUSIC ON" : "🔇 MUSIC OFF"}
+            {isPlaying ? "🔊 MUSIC ON" : "🔇 CLICK TO PLAY MUSIC"}
           </button>
         </div>
       </div>
