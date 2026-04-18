@@ -107,9 +107,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* ===== HERO SECTION ===== */}
-      <section className="relative py-20 px-4 overflow-hidden bg-black">
+      <section className="relative min-h-screen py-20 px-4 overflow-hidden bg-black">
         {/* Starfield Background */}
-        <Stars count={100} />
+        <div className="absolute inset-0">
+          <Stars count={100} />
+        </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left: Egg and Bag */}
@@ -200,8 +202,10 @@ export default function Home() {
       </section>
 
       {/* ===== NFT PREVIEW SECTION ===== */}
-      <section className="relative py-20 px-4 bg-black overflow-hidden" id="preview">
-        <Stars count={100} />
+      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden" id="preview">
+        <div className="absolute inset-0">
+          <Stars count={100} />
+        </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
@@ -242,8 +246,10 @@ export default function Home() {
       </section>
 
       {/* ===== COLLECTION SECTION ===== */}
-      <section className="py-20 px-4 bg-black overflow-hidden">
-        <Stars count={100} />
+      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+        <div className="absolute inset-0">
+          <Stars count={100} />
+        </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
@@ -283,8 +289,10 @@ export default function Home() {
       </section>
 
       {/* ===== LORE SECTION ===== */}
-      <section className="py-20 px-4 bg-black overflow-hidden">
-        <Stars count={100} />
+      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+        <div className="absolute inset-0">
+          <Stars count={100} />
+        </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
@@ -346,8 +354,10 @@ export default function Home() {
       </section>
 
       {/* ===== AIRDROP SECTION ===== */}
-      <section className="relative py-20 px-4 bg-black overflow-hidden">
-        <Stars count={100} />
+      <section className="relative min-h-screen py-20 px-4 bg-black overflow-hidden">
+        <div className="absolute inset-0">
+          <Stars count={100} />
+        </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
