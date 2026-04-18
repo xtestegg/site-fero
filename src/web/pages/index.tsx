@@ -44,41 +44,61 @@ function Stars({ count = 60 }: { count?: number }) {
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // Start playing when component mounts
+    audio.volume = 0.5;
+    
+    // Try to play immediately
+    const playPromise = audio.play();
+    if (playPromise) {
+      playPromise.then(() => {
+        setIsPlaying(true);
+      }).catch(() => {
+        // Autoplay blocked - will start on first user interaction
+        setIsPlaying(false);
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
     if (isPlaying) {
-      audio.volume = 0.5;
       audio.play().catch(() => {
-        // Autoplay blocked - user must interact first
+        // Playback failed
       });
     } else {
       audio.pause();
     }
   }, [isPlaying]);
 
-  useEffect(() => {
-    // Start playing music on initial mount
-    const audio = audioRef.current;
-    if (audio) {
-      audio.volume = 0.5;
-      audio.play().catch(() => {
-        // Autoplay blocked by browser
-      });
-    }
-  }, []);
-
   const handleEnter = () => {
     setShowContent(true);
-    setIsPlaying(true);
+    // Start music on user interaction
+    if (audioRef.current) {
+      audioRef.current.volume = 0.5;
+      audioRef.current.play().catch(() => {});
+      setIsPlaying(true);
+    }
   };
 
   const toggleMusic = () => {
-    setIsPlaying(!isPlaying);
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        audioRef.current.play().catch(() => {});
+        setIsPlaying(true);
+      }
+    }
   };
 
   if (!showContent) {
