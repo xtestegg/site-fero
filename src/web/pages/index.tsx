@@ -87,7 +87,20 @@ export default function Home() {
   };
 
   const toggleMusic = () => {
-    setIsPlaying(!isPlaying);
+    const newState = !isPlaying;
+    setIsPlaying(newState);
+    
+    // Immediately pause/play the audio
+    if (audioRef.current) {
+      if (newState) {
+        audioRef.current.volume = 0.5;
+        audioRef.current.play().catch(() => {
+          console.error("Play failed");
+        });
+      } else {
+        audioRef.current.pause();
+      }
+    }
   };
 
   if (!showContent) {
