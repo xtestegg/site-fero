@@ -49,17 +49,22 @@ export default function Home() {
 
   useEffect(() => {
     const audio = audioRef.current;
+    console.log("Music useEffect - isPlaying:", isPlaying, "audio:", audio);
     if (!audio) return;
 
     audio.volume = 0.5;
     if (isPlaying) {
+      console.log("Attempting to play audio...");
       const playPromise = audio.play();
       if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          console.log("Audio playback failed");
+        playPromise.then(() => {
+          console.log("Audio playing successfully");
+        }).catch((err) => {
+          console.log("Audio playback failed:", err);
         });
       }
     } else {
+      console.log("Pausing audio");
       audio.pause();
     }
   }, [isPlaying]);
