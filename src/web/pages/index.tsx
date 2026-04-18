@@ -44,7 +44,7 @@ function Stars({ count = 60 }: { count?: number }) {
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
