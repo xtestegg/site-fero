@@ -52,6 +52,7 @@ export default function Home() {
     if (!audio) return;
 
     if (isPlaying) {
+      audio.volume = 0.5;
       audio.play().catch(() => {
         // Autoplay blocked - user must interact first
       });
@@ -59,6 +60,17 @@ export default function Home() {
       audio.pause();
     }
   }, [isPlaying]);
+
+  useEffect(() => {
+    // Start playing music on initial mount
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = 0.5;
+      audio.play().catch(() => {
+        // Autoplay blocked by browser
+      });
+    }
+  }, []);
 
   const handleEnter = () => {
     setShowContent(true);
