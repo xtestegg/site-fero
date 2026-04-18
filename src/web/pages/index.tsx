@@ -71,10 +71,18 @@ export default function Home() {
 
   const handleEnter = () => {
     setShowContent(true);
-    // Ensure music plays when entering
+    // Play music when entering if enabled
     if (audioRef.current && isPlaying) {
       audioRef.current.volume = 0.5;
-      audioRef.current.play().catch(() => {});
+      audioRef.current.currentTime = 0;
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log("Music started on ENTER");
+        }).catch((err) => {
+          console.error("Music play failed:", err);
+        });
+      }
     }
   };
 
@@ -433,7 +441,7 @@ export default function Home() {
       </footer>
 
       {/* Background Music */}
-      <audio ref={audioRef} loop>
+      <audio ref={audioRef} loop autoPlay playsInline>
         <source src="/bg-music.mp3" type="audio/mpeg" />
       </audio>
 
