@@ -51,20 +51,43 @@ export default function Home() {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // Start playing when component mounts
-    audio.volume = 0.5;
-    
     // Try to play immediately
+    audio.volume = 0.5;
     const playPromise = audio.play();
     if (playPromise) {
       playPromise.then(() => {
         setIsPlaying(true);
       }).catch(() => {
-        // Autoplay blocked - will start on first user interaction
+        // Autoplay blocked - add listener for first user interaction
         setIsPlaying(false);
       });
     }
-  }, []);
+
+    // Listen for first user interaction to unlock audio
+    const handleUserInteraction = () => {
+      if (audio && !isPlaying) {
+        audio.play().then(() => {
+          setIsPlaying(true);
+        }).catch(() => {
+          // Still blocked
+        });
+      }
+      // Remove listener after first interaction
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('keydown', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
+    };
+
+    document.addEventListener('click', handleUserInteraction);
+    document.addEventListener('keydown', handleUserInteraction);
+    document.addEventListener('touchstart', handleUserInteraction);
+
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('keydown', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
+    };
+  }, [isPlaying]);
 
   useEffect(() => {
     const audio = audioRef.current;
