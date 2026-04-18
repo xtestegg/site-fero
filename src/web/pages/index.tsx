@@ -141,18 +141,6 @@ export default function Home() {
           </button>
 
           <p className="text-gray-400 text-sm font-semibold">🎵 with sound</p>
-
-          {/* Music Toggle */}
-          <button
-            onClick={toggleMusic}
-            className={`flex items-center gap-2 px-6 py-3 rounded-full border-2 font-bold transition-all ${
-              isPlaying 
-                ? "border-green-500 text-green-400 bg-green-500/10 hover:bg-green-500/20" 
-                : "border-red-500 text-red-400 bg-red-500/10 hover:bg-red-500/20"
-            }`}
-          >
-            {isPlaying ? "🔊 MUSIC ON" : "🔇 MUSIC OFF"}
-          </button>
         </div>
       </div>
     );
