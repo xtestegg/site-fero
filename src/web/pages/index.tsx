@@ -148,13 +148,18 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div 
+      className="min-h-screen text-white"
+      style={{
+        backgroundImage: "url('/bg-fantasy.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundColor: "#0a0e27"
+      }}
+    >
       {/* ===== HERO SECTION ===== */}
-      <section className="relative py-20 px-4 overflow-hidden bg-black">
-        {/* Starfield Background */}
-        <div className="absolute inset-0">
-          <Stars count={100} />
-        </div>
+      <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             {/* Title Image - Graffiti Style CROCO CROCS */}
