@@ -171,18 +171,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Mint Soon Badge */}
-            <div
-              className="inline-block px-6 py-2 rounded-full mb-6 bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 text-black font-black"
-              style={{
-                fontFamily: "'Fredoka One', cursive",
-                fontSize: "clamp(1.2rem, 3vw, 2rem)",
-                letterSpacing: "0.1em",
-              }}
-            >
-              Mint Soon
-            </div>
-
             {/* Description */}
             <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
               CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
