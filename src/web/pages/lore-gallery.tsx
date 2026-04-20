@@ -160,14 +160,14 @@ export default function LoreGallery() {
   const currentCroc = CROCS_LORE[currentIndex];
 
   return (
-    <div className="min-h-screen bg-black text-black font-mono relative overflow-hidden">
+    <div className="min-h-screen bg-black text-lime-300 font-mono relative overflow-hidden">
       <Stars />
 
       {/* Navigation Header */}
       <header className="relative z-20 border-b-2 border-cyan-500 p-6 flex justify-between items-center">
         <button
           onClick={() => navigate("/")}
-          className="px-6 py-2 rounded-lg border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-black transition-all duration-300"
+          className="px-6 py-2 rounded-lg border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-lime-300 transition-all duration-300"
         >
           ← BACK TO HOME
         </button>
@@ -204,7 +204,7 @@ export default function LoreGallery() {
               <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mb-6" />
             </div>
 
-            <p className="text-black leading-relaxed text-base md:text-lg whitespace-pre-wrap">
+            <p className="text-lime-300 leading-relaxed text-base md:text-lg whitespace-pre-wrap">
               {currentCroc.lore}
             </p>
 
@@ -212,13 +212,13 @@ export default function LoreGallery() {
             <div className="flex gap-4 mt-8">
               <button
                 onClick={handlePrevious}
-                className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2 font-bold"
+                className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-lime-300 transition-all duration-300 flex items-center justify-center gap-2 font-bold"
               >
                 ← PREV
               </button>
               <button
                 onClick={handleNext}
-                className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center justify-center gap-2 font-bold"
+                className="flex-1 px-6 py-3 rounded-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-lime-300 transition-all duration-300 flex items-center justify-center gap-2 font-bold"
               >
                 NEXT →
               </button>
