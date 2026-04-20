@@ -155,64 +155,44 @@ export default function Home() {
           <Stars count={100} />
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Left: Egg and Bag */}
-            <div className="flex flex-col items-center justify-center">
-              {/* Egg */}
-              <div className="relative w-full max-w-sm">
-                <img src={ASSETS.eggGif} alt="Croco Egg Hatching" className="w-full h-auto block" />
-              </div>
-
-              {/* Teaser card */}
-              <div
-                className="mt-6 px-4 py-3 rounded-full text-center"
+          <div className="flex flex-col items-center justify-center text-center">
+            {/* Title in Graffiti Style */}
+            <div className="mb-8">
+              <h1
+                className="text-7xl md:text-9xl leading-none font-black"
                 style={{
-                  background: "rgba(249,115,22,0.2)",
-                  border: "1px solid rgba(249,115,22,0.5)",
-                  color: "#F97316",
-                  fontFamily: "'Fredoka One', cursive",
+                  fontFamily: "'Comic Sans MS', 'Fredoka One', cursive",
+                  color: "#D4FF00",
+                  textShadow: "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, -5px 0 0 #fff, 5px 0 0 #fff, 0 -5px 0 #fff, 0 5px 0 #fff, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, -8px -8px 0 rgba(0,0,0,0.3)",
+                  letterSpacing: "0.15em",
+                  transform: "skewX(-10deg)",
                 }}
               >
-                🔥 New
-              </div>
+                CROCO<br />CROCS
+              </h1>
             </div>
 
-            {/* Right: Title and Info */}
-            <div className="text-center lg:text-left">
-              <div
-                className="text-white text-6xl md:text-8xl leading-none mb-1"
-                style={{ fontFamily: "'Fredoka One', cursive" }}
-              >
-                CROCO
-              </div>
-              <div
-                className="text-white text-6xl md:text-8xl leading-none mb-6"
-                style={{ fontFamily: "'Fredoka One', cursive" }}
-              >
-                CROCS
-              </div>
+            {/* Mint Soon Badge */}
+            <div
+              className="inline-block px-6 py-2 rounded-full mb-6 bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 text-black font-black"
+              style={{
+                fontFamily: "'Fredoka One', cursive",
+                fontSize: "clamp(1.2rem, 3vw, 2rem)",
+                letterSpacing: "0.1em",
+              }}
+            >
+              Mint Soon
+            </div>
 
-              {/* Mint Soon Badge */}
-              <div
-                className="inline-block px-6 py-2 rounded-full mb-6 bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 text-black font-black"
-                style={{
-                  fontFamily: "'Fredoka One', cursive",
-                  fontSize: "clamp(1.2rem, 3vw, 2rem)",
-                  letterSpacing: "0.1em",
-                }}
-              >
-                Mint Soon
-              </div>
+            {/* Description */}
+            <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
+              CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
+              <br />
+              Join the CrocoCrocs community.🐊
+            </p>
 
-              {/* Description */}
-              <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8">
-                CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
-                <br />
-                Join the CrocoCrocs community.🐊
-              </p>
-
-              {/* Social Media Links */}
-              <div className="flex gap-4 justify-center lg:justify-start mb-8">
+            {/* Social Media Links */}
+            <div className="flex gap-4 justify-center mb-8">
                 <a
                   href="https://discord.gg/J6ZUWvARsY"
                   target="_blank"
@@ -236,9 +216,6 @@ export default function Home() {
                   </svg>
                 </a>
               </div>
-
-
-            </div>
           </div>
         </div>
       </section>
