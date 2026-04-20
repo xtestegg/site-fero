@@ -171,13 +171,6 @@ export default function Home() {
               />
             </div>
 
-            {/* Description */}
-            <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
-              CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
-              <br />
-              Join the CrocoCrocs community.🐊
-            </p>
-
             {/* Social Media Links */}
             <div className="flex gap-4 justify-center mb-8">
                 <a
