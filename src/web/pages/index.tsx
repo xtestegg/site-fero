@@ -118,18 +118,11 @@ export default function Home() {
 
           {/* Title */}
           <div className="text-center">
-            <h1
-              className="text-white text-6xl md:text-8xl leading-none font-black mb-4"
-              style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.1em" }}
-            >
-              CROCO
-            </h1>
-            <h1
-              className="text-white text-6xl md:text-8xl leading-none font-black"
-              style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.1em" }}
-            >
-              CROCS
-            </h1>
+            <img 
+              src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FR8qi-JMqzAZpkxT6p6jc6%2FSem_t%C3%ADtulo_(16)_L01NcW.png"
+              alt="CROCOCROGS"
+              className="w-full max-w-lg"
+            />
           </div>
 
           {/* Enter Button */}
