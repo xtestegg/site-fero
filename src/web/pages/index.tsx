@@ -123,7 +123,7 @@ export default function Home() {
           {/* Enter Button */}
           <button
             onClick={handleEnter}
-            className="px-10 py-4 rounded-2xl text-2xl font-black mb-3 relative overflow-hidden bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 hover:from-lime-300 hover:via-green-300 hover:to-emerald-400 text-lime-300 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg hover:shadow-lime-500/50 active:scale-95"
+            className="px-10 py-4 rounded-2xl text-2xl font-black mb-3 relative overflow-hidden bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 hover:from-lime-300 hover:via-green-300 hover:to-emerald-400 text-white transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg hover:shadow-lime-500/50 active:scale-95"
             style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.1em" }}
           >
             ENTER
