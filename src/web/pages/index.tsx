@@ -111,11 +111,6 @@ export default function Home() {
         <Stars />
 
         <div className="relative z-10 flex flex-col items-center gap-8">
-          {/* Animated bag */}
-          <div className="animate-bounce">
-            <img src={ASSETS.bag} alt="CroCo Crocs Bag" className="w-32 h-32 md:w-48 md:h-48" />
-          </div>
-
           {/* Title */}
           <div className="text-center">
             <img 
