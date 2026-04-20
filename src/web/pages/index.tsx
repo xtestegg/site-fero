@@ -9,7 +9,7 @@ const ASSETS = {
   unique02: "https://d2xsxph8kpxj0f.cloudfront.net/310519663400938327/c4RuQSzBTFzGDauPpuTQty/croco-king_7630ed59.png",
   uniqueLava: "https://d2xsxph8kpxj0f.cloudfront.net/310519663400938327/c4RuQSzBTFzGDauPpuTQty/croco-cave_da8d0c3c.png",
   crococrocsLogo: "https://d2xsxph8kpxj0f.cloudfront.net/310519663399658034/46o8fP7mNreeakq9DApsux/UntitledProject(13)_c0e044be.jpg",
-  crococrocsText: "https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FPapxafeTprjSc1Xt2JVMw%2Fcroco-clean.png",
+  crococrocsText: "https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FpGLCw2koDP4zOr22z31FS%2Fcroco-fixed.png",
 };
 
 // Stars background component
