@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 // CDN Asset URLs
 const ASSETS = {
   bag: "https://d2xsxph8kpxj0f.cloudfront.net/310519663399658034/46o8fP7mNreeakq9DApsux/crocrocrocs-bag_a6a041e6.png",
-  eggGif: "https://d2xsxph8kpxj0f.cloudfront.net/310519663399658034/46o8fP7mNreeakq9DApsux/croco_egg_dark_e5e0ab05.gif",
+  eggGif: "/croco_egg_dark_transparent.png",
   crocoAnim: "https://d2xsxph8kpxj0f.cloudfront.net/310519663399658034/46o8fP7mNreeakq9DApsux/croco_animation_38e4dbbf.gif",
   bgBottom: "https://d2xsxph8kpxj0f.cloudfront.net/310519663399658034/46o8fP7mNreeakq9DApsux/croco_bg_bottom_34c6a0c5.png",
   unique02: "https://d2xsxph8kpxj0f.cloudfront.net/310519663400938327/c4RuQSzBTFzGDauPpuTQty/croco-king_7630ed59.png",
