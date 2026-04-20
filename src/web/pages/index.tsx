@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Navbar } from "../components/Navbar";
 
 // CDN Asset URLs
 const ASSETS = {
@@ -107,8 +108,10 @@ export default function Home() {
 
   if (!showContent) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black relative overflow-hidden">
-        <Stars />
+      <>
+        <Navbar />
+        <div className="min-h-screen flex flex-col items-center justify-center bg-black relative overflow-hidden pt-20">
+          <Stars />
 
         <div className="relative z-10 flex flex-col items-center gap-8">
           {/* Title */}
@@ -132,20 +135,23 @@ export default function Home() {
           <p className="text-gray-400 text-sm font-semibold">🎵 with sound</p>
         </div>
       </div>
+      </>
     );
   }
 
   return (
-    <div 
-      className="min-h-screen text-white"
-      style={{
-        backgroundImage: "url('/bg-fantasy.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundColor: "#0a0e27"
-      }}
-    >
+    <>
+      <Navbar />
+      <div 
+        className="min-h-screen text-white pt-20"
+        style={{
+          backgroundImage: "url('/bg-fantasy.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundColor: "#0a0e27"
+        }}
+      >
       {/* ===== HERO SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
@@ -404,6 +410,7 @@ export default function Home() {
           font-family: 'Nunito', sans-serif;
         }
       `}</style>
-    </div>
+      </div>
+    </>
   );
 }
