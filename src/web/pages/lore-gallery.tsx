@@ -160,7 +160,7 @@ export default function LoreGallery() {
   const currentCroc = CROCS_LORE[currentIndex];
 
   return (
-    <div className="min-h-screen bg-black text-white font-mono relative overflow-hidden">
+    <div className="min-h-screen bg-black text-black font-mono relative overflow-hidden">
       <Stars />
 
       {/* Navigation Header */}

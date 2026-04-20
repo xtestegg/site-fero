@@ -135,7 +135,7 @@ export default function Home() {
 
   return (
     <div 
-      className="min-h-screen text-white"
+      className="min-h-screen text-black"
       style={{
         backgroundImage: "url('/bg-fantasy.webp')",
         backgroundSize: "cover",
@@ -199,7 +199,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
-              className="text-white text-5xl md:text-6xl font-black mb-4"
+              className="text-black text-5xl md:text-6xl font-black mb-4"
               style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
             >
               NFT PREVIEW
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
-              className="text-white text-5xl md:text-6xl font-black mb-4"
+              className="text-black text-5xl md:text-6xl font-black mb-4"
               style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
             >
               COLLECTION
@@ -286,7 +286,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
-              className="text-white text-5xl md:text-6xl font-black mb-4"
+              className="text-black text-5xl md:text-6xl font-black mb-4"
               style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
             >
               LORE
@@ -334,7 +334,7 @@ export default function Home() {
           <div className="mt-12 text-center">
             <a
               href="/lore-gallery"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg hover:shadow-purple-500/50 active:scale-95"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-black font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg hover:shadow-purple-500/50 active:scale-95"
               style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
             >
               ✨ EXPLORE THE 18 1/1 LEGENDS ✨
@@ -351,7 +351,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2
-              className="text-white text-5xl md:text-6xl font-black mb-4"
+              className="text-black text-5xl md:text-6xl font-black mb-4"
               style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
             >
               AIRDROP REWARDS
