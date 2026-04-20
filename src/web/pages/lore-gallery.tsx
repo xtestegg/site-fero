@@ -204,7 +204,7 @@ export default function LoreGallery() {
               <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mb-6" />
             </div>
 
-            <p className="text-gray-300 leading-relaxed text-base md:text-lg whitespace-pre-wrap">
+            <p className="text-black leading-relaxed text-base md:text-lg whitespace-pre-wrap">
               {currentCroc.lore}
             </p>
 

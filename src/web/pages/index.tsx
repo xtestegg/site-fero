@@ -158,7 +158,7 @@ export default function Home() {
             </div>
 
             {/* Description */}
-            <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
+            <p className="text-black text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
               CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
               <br />
               Join the CrocoCrocs community.🐊
@@ -171,7 +171,7 @@ export default function Home() {
                   className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-purple-500 hover:border-purple-300 hover:bg-purple-500/20 transition-all duration-300"
                   title="Join Discord"
                 >
-                  <svg className="w-6 h-6 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.317 4.492c-1.53-.742-3.247-1.304-5.085-1.622a.074.074 0 0 0-.079.037c-.21.375-.444.864-.607 1.25-1.645-.246-3.273-.246-4.886 0-.163-.386-.405-.875-.618-1.25a.077.077 0 0 0-.079-.037C6.931 3.188 5.215 3.75 3.683 4.492a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057c1.760 1.289 3.467 2.08 5.148 2.597a.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.042-.106c-.657-.249-1.282-.578-1.855-.943a.077.077 0 0 1-.008-.128c.125-.093.25-.19.369-.287a.074.074 0 0 1 .076-.01c3.89 1.77 8.106 1.77 11.954 0a.074.074 0 0 1 .076.01c.12.098.245.194.369.287a.077.077 0 0 1-.007.128c-.573.365-1.198.694-1.855.943a.076.076 0 0 0-.041.106c.353.699.764 1.364 1.225 1.994a.076.076 0 0 0 .084.028c1.689-.517 3.397-1.308 5.147-2.597a.077.077 0 0 0 .032-.057c.504-4.780-.838-8.94-3.549-12.636a.061.061 0 0 0-.031-.028zM8.02 15.33c-.999 0-1.822-.922-1.822-2.05 0-1.127.823-2.05 1.822-2.05.999 0 1.823.923 1.823 2.05 0 1.127-.823 2.05-1.823 2.05zm7.984 0c-.999 0-1.822-.922-1.822-2.05 0-1.127.823-2.05 1.822-2.05.999 0 1.823.923 1.823 2.05 0 1.127-.824 2.05-1.823 2.05z"/>
                   </svg>
                 </a>
@@ -182,7 +182,7 @@ export default function Home() {
                   className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 hover:border-blue-300 hover:bg-blue-500/20 transition-all duration-300"
                   title="Follow on X"
                 >
-                  <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.635L9.5 15.66 3.924 21.75H.645l7.73-8.835L.645 2.25h6.974l4.557 6.017L17.48 2.25h.764zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                 </a>
@@ -204,7 +204,7 @@ export default function Home() {
             >
               NFT PREVIEW
             </h2>
-            <p className="text-gray-400">Check out some of our amazing CrocoCrocs</p>
+            <p className="text-black">Check out some of our amazing CrocoCrocs</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="group relative rounded-2xl overflow-hidden border-2 border-purple-500 hover:border-green-400 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50">
               <img src={ASSETS.unique02} alt="1/1 Unique" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <div className="text-sm font-bold text-green-400">1/1 UNIQUE</div>
+                <div className="text-sm font-bold text-black">1/1 UNIQUE</div>
               </div>
             </div>
 
@@ -220,7 +220,7 @@ export default function Home() {
             <div className="group relative rounded-2xl overflow-hidden border-2 border-green-400 hover:border-orange-400 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/50 md:scale-105">
               <img src={ASSETS.crocoAnim} alt="Generative" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <div className="text-sm font-bold text-green-400">GENERATIVE</div>
+                <div className="text-sm font-bold text-black">GENERATIVE</div>
               </div>
             </div>
 
@@ -228,7 +228,7 @@ export default function Home() {
             <div className="group relative rounded-2xl overflow-hidden border-2 border-purple-500 hover:border-green-400 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50">
               <img src={ASSETS.uniqueLava} alt="1/1 Unique" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <div className="text-sm font-bold text-green-400">1/1 UNIQUE</div>
+                <div className="text-sm font-bold text-black">1/1 UNIQUE</div>
               </div>
             </div>
           </div>
@@ -253,26 +253,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
             <div className="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-500 hover:border-green-400 transition-all">
-              <h3 className="text-xl font-bold text-green-400 mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
+              <h3 className="text-xl font-bold text-black mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
                 🎁 Free Mint
               </h3>
-              <p className="text-gray-300 text-sm">100% free mint for whitelist members. Only the network gas fee applies.</p>
+              <p className="text-black text-sm">100% free mint for whitelist members. Only the network gas fee applies.</p>
             </div>
 
             {/* Card 2 */}
             <div className="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-500 hover:border-green-400 transition-all">
-              <h3 className="text-xl font-bold text-green-400 mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
+              <h3 className="text-xl font-bold text-black mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
                 📦 Fixed Supply
               </h3>
-              <p className="text-gray-300 text-sm">Only 7,777 Crocos will ever exist. No more will be created.</p>
+              <p className="text-black text-sm">Only 7,777 Crocos will ever exist. No more will be created.</p>
             </div>
 
             {/* Card 3 */}
             <div className="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-500 hover:border-green-400 transition-all">
-              <h3 className="text-xl font-bold text-green-400 mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
+              <h3 className="text-xl font-bold text-black mb-3" style={{ fontFamily: "'Fredoka One', cursive" }}>
                 🦎 1/1 Uniques
               </h3>
-              <p className="text-gray-300 text-sm">A collection of 7,777 Crocos, including 18 completely unique 1/1 NFTs.</p>
+              <p className="text-black text-sm">A collection of 7,777 Crocos, including 18 completely unique 1/1 NFTs.</p>
             </div>
           </div>
         </div>
@@ -291,7 +291,7 @@ export default function Home() {
             >
               LORE
             </h2>
-            <p className="text-gray-400">The story behind the CrocoCrocs</p>
+            <p className="text-black">The story behind the CrocoCrocs</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -309,7 +309,7 @@ export default function Home() {
                 >
                   The Awakening
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-black leading-relaxed text-lg">
                   No one knows exactly when he emerged. Some say he is a fragment of the Forgotten Swamp's own consciousness… others believe he was born as a side effect of the Black Croco's presence.
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function Home() {
                 >
                   Your Journey
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-black leading-relaxed text-lg">
                   Every CrocoCroc is a gateway to possibility. As you join our community, you become part of something
                   greater than yourself. You become a keeper of the digital heritage, a pioneer of the new age, a legend
                   in the making.
@@ -356,7 +356,7 @@ export default function Home() {
             >
               AIRDROP REWARDS
             </h2>
-            <p className="text-gray-400 text-lg">Earn rewards by holding CroCrocs NFTs</p>
+            <p className="text-black text-lg">Earn rewards by holding CroCrocs NFTs</p>
           </div>
 
           <div className="flex justify-center">
@@ -383,7 +383,7 @@ export default function Home() {
         />
         <div className="relative z-10 container mx-auto max-w-5xl px-4">
           <div className="text-center py-12">
-            <p className="text-gray-400 text-sm font-semibold mb-8">
+            <p className="text-black text-sm font-semibold mb-8">
               © 2025 CroCoCrocs. All rights reserved.🐊
             </p>
           </div>
