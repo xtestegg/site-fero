@@ -156,20 +156,13 @@ export default function Home() {
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            {/* Title in Graffiti Style */}
-            <div className="mb-8">
-              <h1
-                className="text-7xl md:text-9xl leading-none font-black"
-                style={{
-                  fontFamily: "'Comic Sans MS', 'Fredoka One', cursive",
-                  color: "#D4FF00",
-                  textShadow: "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, -5px 0 0 #fff, 5px 0 0 #fff, 0 -5px 0 #fff, 0 5px 0 #fff, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, -8px -8px 0 rgba(0,0,0,0.3)",
-                  letterSpacing: "0.15em",
-                  transform: "skewX(-10deg)",
-                }}
-              >
-                CROCO<br />CROCS
-              </h1>
+            {/* Title Image - Graffiti Style CROCO CROCS */}
+            <div className="mb-8 w-full max-w-2xl">
+              <img 
+                src="/croco-crocs-text.png" 
+                alt="CROCO CROCS" 
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Mint Soon Badge */}
