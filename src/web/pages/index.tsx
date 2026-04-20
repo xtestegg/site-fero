@@ -128,8 +128,6 @@ export default function Home() {
           >
             ENTER
           </button>
-
-          <p className="text-gray-400 text-sm font-semibold">🎵 with sound</p>
         </div>
       </div>
     );
