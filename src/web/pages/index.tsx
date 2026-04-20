@@ -162,6 +162,15 @@ export default function Home() {
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
+            {/* Title Image - CROGOGCROGS */}
+            <div className="mb-8 w-full px-2">
+              <img 
+                src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FL31Lp3BW9577fhV0Nq9qg%2Fcroco-novo.png" 
+                alt="CROGOGCROGS" 
+                className="w-full h-auto"
+              />
+            </div>
+
             {/* Description */}
             <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
               CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
