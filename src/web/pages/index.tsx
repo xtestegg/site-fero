@@ -194,7 +194,6 @@ export default function Home() {
       {/* ===== NFT PREVIEW SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden" id="preview">
         <div className="absolute inset-0">
-          <Stars count={100} />
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
@@ -238,7 +237,6 @@ export default function Home() {
       {/* ===== COLLECTION SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Stars count={100} />
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
@@ -281,7 +279,6 @@ export default function Home() {
       {/* ===== LORE SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Stars count={100} />
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
@@ -346,7 +343,6 @@ export default function Home() {
       {/* ===== AIRDROP SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Stars count={100} />
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
