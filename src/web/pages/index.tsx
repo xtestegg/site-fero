@@ -121,7 +121,7 @@ export default function Home() {
             <img 
               src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FR8qi-JMqzAZpkxT6p6jc6%2FSem_t%C3%ADtulo_(16)_L01NcW.png"
               alt="CROCOCROGS"
-              className="w-full max-w-lg"
+              className="w-full max-w-3xl"
             />
           </div>
 
