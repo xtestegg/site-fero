@@ -165,7 +165,7 @@ export default function Home() {
             {/* Title Image - CROGOGCROGS */}
             <div className="mb-8 w-full px-2">
               <img 
-                src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FL31Lp3BW9577fhV0Nq9qg%2Fcroco-novo.png" 
+                src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fwawaa6sgnHgK31YABCdAE%2Fcroco-correto.png" 
                 alt="CROGOGCROGS" 
                 className="w-full h-auto"
               />
