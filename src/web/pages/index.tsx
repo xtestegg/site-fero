@@ -162,16 +162,12 @@ export default function Home() {
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            {/* Title Image - Graffiti Style CROCO CROCS */}
-            <div className="mb-8 w-full px-2">
-              <img 
-                src={ASSETS.crococrocsText} 
-                alt="CROCO CROCS" 
-                className="w-full h-auto"
-              />
-            </div>
-
-            {/* Social Media Links */}
+            {/* Description */}
+            <p className="text-gray-300 text-base md:text-lg font-semibold leading-relaxed mb-8 max-w-2xl">
+              CrocoCrocs is a collection of 7,777 crocodiles living on the blockchain, including 18 completely unique 1/1 artworks.
+              <br />
+              Join the CrocoCrocs community.🐊
+            </p>
             <div className="flex gap-4 justify-center mb-8">
                 <a
                   href="https://discord.gg/J6ZUWvARsY"
