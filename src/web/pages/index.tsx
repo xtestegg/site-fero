@@ -163,7 +163,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             {/* Title Image - Graffiti Style CROCO CROCS */}
-            <div className="mb-8 w-full max-w-4xl">
+            <div className="mb-8 w-full max-w-6xl">
               <img 
                 src={ASSETS.crococrocsText} 
                 alt="CROCO CROCS" 
