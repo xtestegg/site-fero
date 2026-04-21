@@ -183,7 +183,7 @@ export default function Home() {
           title="View on OpenSea"
         >
           <img 
-            src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FKr_advVa7xMlwz4CmUoCz%2Fopensea_logo_icon_248298_96tR4i.png"
+            src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2F24gPaeZ4PUYzE0gwBsMxn%2Fopensea_style_icon.png"
             alt="OpenSea"
             className="w-7 h-7 object-contain"
           />
