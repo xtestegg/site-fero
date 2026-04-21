@@ -404,9 +404,9 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="w-56 h-56 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(168, 85, 247, 0.6)" }}>
                 <img 
-                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FzMG4X6Y0Q6OxFw2WVJlBk%2F10_4Kf4xL.png"
+                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
                   alt="Feromonthes Godzilla"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <p 
@@ -426,11 +426,11 @@ export default function Home() {
 
             {/* Subzero Card */}
             <div className="flex flex-col items-center">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(34, 211, 238, 0.6)" }}>
+              <div className="w-56 h-56 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(34, 211, 238, 0.6)" }}>
                 <img 
-                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FtGve-QMSNc_hDB2-zzbhR%2F7_sqU9Zm.png"
+                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FxNjV-4-0ymzoy74HYwlAf%2Fteam_subzero.png"
                   alt="Feromonthes Subzero"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <p 
