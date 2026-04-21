@@ -410,15 +410,7 @@ export default function Home() {
                 />
               </div>
               <p 
-                className="mt-6 text-2xl font-bold"
-                style={{
-                  background: "linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #a855f7 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  textShadow: "0 0 20px rgba(168, 85, 247, 0.6)",
-                  filter: "drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))"
-                }}
+                className="mt-6 text-2xl font-bold text-black"
               >
                 Feromonthes
               </p>
@@ -434,15 +426,7 @@ export default function Home() {
                 />
               </div>
               <p 
-                className="mt-6 text-2xl font-bold"
-                style={{
-                  background: "linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #06b6d4 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  textShadow: "0 0 20px rgba(6, 182, 212, 0.6)",
-                  filter: "drop-shadow(0 0 10px rgba(6, 182, 212, 0.4))"
-                }}
+                className="mt-6 text-2xl font-bold text-black"
               >
                 Subzero
               </p>
