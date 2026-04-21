@@ -360,16 +360,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Button to view all 18 1/1 lore */}
-          <div className="mt-12 text-center">
-            <a
-              href="/lore-gallery"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lime-300 font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg hover:shadow-purple-500/50 active:scale-95"
-              style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
-            >
-              ✨ EXPLORE THE 18 1/1 LEGENDS ✨
-            </a>
-          </div>
+
         </div>
       </section>
 
