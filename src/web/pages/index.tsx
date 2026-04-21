@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* ===== NFT PREVIEW SECTION ===== */}
-      <section className="relative py-20 px-4 overflow-hidden" id="preview" style={{ backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fu4ncudRtKXtDfEZO6QmRh%2FCaptura_de_tela_2026-04-21_150439_zVwGB-.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="relative py-20 px-4 overflow-hidden" id="preview">
         <div className="absolute inset-0">
         </div>
         <div className="container mx-auto max-w-5xl relative z-10">
