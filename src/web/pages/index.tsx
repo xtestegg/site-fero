@@ -409,7 +409,7 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="mt-6 px-2 py-0.5 bg-purple-200 rounded-lg border border-purple-300">
+              <div className="mt-6 px-2 py-0.5 bg-green-200 rounded-lg border border-green-300">
                 <p className="text-2xl font-bold text-black">
                   Feromonthes
                 </p>
