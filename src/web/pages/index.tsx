@@ -146,6 +146,16 @@ export default function Home() {
     >
       {/* Top Buttons - Navigation */}
       <div className="relative pt-6 px-4 z-10 flex justify-center gap-6 items-center">
+        {/* OpenSea Button */}
+        <a 
+          href="https://opensea.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg"
+        >
+          🌊 OpenSea
+        </a>
+
         {/* Lore Gallery Button */}
         <a 
           href="/lore-gallery"
