@@ -11,13 +11,12 @@ export function Navbar({ currentPage = "home" }: NavbarProps) {
         </div>
       </div>
       
-      {/* Crocodile head - positioned above and overlapping */}
+      {/* Crocodile head - positioned at center of navbar */}
       <img 
         src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FmYb2aRd69z0wY1UjZV_cm%2Fcroco_head_transparent.png"
         alt="CrocoCrocs Logo"
-        className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-24 w-24 object-contain"
+        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-24 w-24 object-contain"
         style={{
-          bottom: "50%",
           filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))"
         }}
       />
