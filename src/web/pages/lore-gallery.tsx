@@ -160,8 +160,15 @@ export default function LoreGallery() {
   const currentCroc = CROCS_LORE[currentIndex];
 
   return (
-    <div className="min-h-screen bg-black text-lime-300 font-mono relative overflow-hidden">
-      <Stars />
+    <div 
+      className="min-h-screen text-lime-300 font-mono relative overflow-hidden"
+      style={{
+        backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fu4ncudRtKXtDfEZO6QmRh%2FCaptura_de_tela_2026-04-21_150439_zVwGB-.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundColor: "#000"
+      }}
+    >
 
       {/* Navigation Header */}
       <header className="relative z-20 border-b-2 border-cyan-500 p-6 flex justify-between items-center">
