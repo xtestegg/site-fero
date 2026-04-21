@@ -1,5 +1,4 @@
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 const ASSETS = {
   crococrocsLogo: "https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FR8qi-JMqzAZpkxT6p6jc6%2FSem_t%C3%ADtulo_(16)_L01NcW.png",
@@ -24,15 +23,15 @@ export default function CrocoPalette() {
       {/* Header */}
       <div className="relative pt-8 pb-4 px-4">
         <div className="container mx-auto max-w-5xl flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <img src={ASSETS.crococrocsLogo} alt="CrocoCrocs" className="h-12" />
-          </Link>
-          <Link 
-            to="/" 
+          </a>
+          <a 
+            href="/" 
             className="px-4 py-2 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all"
           >
             Back
-          </Link>
+          </a>
         </div>
       </div>
 
