@@ -387,6 +387,70 @@ export default function Home() {
       </footer>
 
       {/* Background Music */}
+      {/* ===== TEAM SECTION ===== */}
+      <section className="relative py-20 px-4 overflow-hidden" id="team">
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <h2
+              className="text-white text-5xl md:text-6xl font-black mb-4"
+              style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
+            >
+              Team
+            </h2>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
+            {/* Godzilla Card */}
+            <div className="flex flex-col items-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(168, 85, 247, 0.6)" }}>
+                <img 
+                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FzMG4X6Y0Q6OxFw2WVJlBk%2F10_4Kf4xL.png"
+                  alt="Feromonthes Godzilla"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p 
+                className="mt-6 text-2xl font-bold"
+                style={{
+                  background: "linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #a855f7 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  textShadow: "0 0 20px rgba(168, 85, 247, 0.6)",
+                  filter: "drop-shadow(0 0 10px rgba(168, 85, 247, 0.4))"
+                }}
+              >
+                Feromonthes
+              </p>
+            </div>
+
+            {/* Subzero Card */}
+            <div className="flex flex-col items-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(34, 211, 238, 0.6)" }}>
+                <img 
+                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FtGve-QMSNc_hDB2-zzbhR%2F7_sqU9Zm.png"
+                  alt="Feromonthes Subzero"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p 
+                className="mt-6 text-2xl font-bold"
+                style={{
+                  background: "linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #06b6d4 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  textShadow: "0 0 20px rgba(6, 182, 212, 0.6)",
+                  filter: "drop-shadow(0 0 10px rgba(6, 182, 212, 0.4))"
+                }}
+              >
+                Feromonthes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <audio ref={audioRef} loop autoPlay playsInline>
         <source src="/bg-music.mp3" type="audio/mpeg" />
       </audio>
