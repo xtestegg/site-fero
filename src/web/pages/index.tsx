@@ -174,21 +174,6 @@ export default function Home() {
           </svg>
         </a>
 
-        {/* OpenSea Button */}
-        <a 
-          href="https://opensea.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center w-14 h-14 rounded-lg hover:opacity-80 transition-all shadow-lg"
-          title="View on OpenSea"
-        >
-          <img 
-            src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2F24gPaeZ4PUYzE0gwBsMxn%2Fopensea_style_icon.png"
-            alt="OpenSea"
-            className="w-7 h-7 object-contain"
-          />
-        </a>
-
         <a
           href="https://x.com/CrocoCrocsWorld"
           target="_blank"
