@@ -179,13 +179,13 @@ export default function Home() {
           href="https://opensea.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-14 h-14 rounded-lg hover:opacity-80 transition-all shadow-lg"
+          className="flex items-center justify-center w-14 h-14 rounded-lg bg-blue-400 hover:bg-blue-500 transition-all duration-300"
           title="View on OpenSea"
         >
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2F5I-6QIOMUiYgX5XOtKhoU%2FhkVLNt5__400x400_EK4M0_.jpg"
             alt="OpenSea"
-            className="w-9 h-9 object-contain"
+            className="w-7 h-7 object-contain"
           />
         </a>
 
