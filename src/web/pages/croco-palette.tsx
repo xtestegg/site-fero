@@ -20,6 +20,17 @@ export default function CrocoPalette() {
         backgroundImage: "url('/bg-fantasy.png')",
       }}
     >
+      {/* Back Button */}
+      <div className="relative pt-8 px-4 z-10">
+        <div className="container mx-auto max-w-5xl">
+          <a 
+            href="/"
+            className="inline-block px-6 py-2 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all"
+          >
+            ← Voltar
+          </a>
+        </div>
+      </div>
 
       {/* The Croco Palette Section */}
       <section className="relative py-20 px-4 overflow-hidden">
