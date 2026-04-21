@@ -409,7 +409,7 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="mt-6 px-6 py-3 bg-white rounded-lg">
+              <div className="mt-6 px-3 py-1 bg-white rounded-lg">
                 <p className="text-2xl font-bold text-black">
                   Feromonthes
                 </p>
@@ -425,7 +425,7 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="mt-6 px-6 py-3 bg-white rounded-lg">
+              <div className="mt-6 px-3 py-1 bg-white rounded-lg">
                 <p className="text-2xl font-bold text-black">
                   Subzero
                 </p>
