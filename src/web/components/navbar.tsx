@@ -13,7 +13,7 @@ export function Navbar({ currentPage = "home" }: NavbarProps) {
       
       {/* Crocodile head - positioned at center of navbar */}
       <img 
-        src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FmYb2aRd69z0wY1UjZV_cm%2Fcroco_head_transparent.png"
+        src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fw2Z1Z5dcNu7wAqICzlq11%2FSem_t%C3%ADtulo_(17)_5TKIet.png"
         alt="CrocoCrocs Logo"
         className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-24 w-24 object-contain"
         style={{
