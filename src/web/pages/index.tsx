@@ -365,22 +365,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== THE CROCO PALETTE SECTION ===== */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      {/* ===== CROCO PALETTE BUTTON ===== */}
+      <section className="relative py-16 px-4 overflow-hidden text-center">
         <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="text-center mb-12">
-            <h2
-              className="text-white text-5xl md:text-6xl font-black mb-8"
-              style={{ fontFamily: "'Fredoka One', cursive", letterSpacing: "0.05em" }}
-            >
-              The Croco Palette
-            </h2>
-            <img 
-              src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FbBANTNPr9hV9PEmPDJT2g%2Fcroco_crocs_collection_(4)_0RdZrS.png"
-              alt="CrocoCrocs Collection Palette"
-              className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
-            />
-          </div>
+          <a 
+            href="/croco-palette"
+            className="inline-block px-8 py-3 bg-lime-300 text-black font-bold text-lg rounded-lg hover:bg-lime-400 transition-all duration-300 shadow-lg"
+          >
+            View The Croco Palette
+          </a>
         </div>
       </section>
 
