@@ -203,7 +203,11 @@ export default function LoreGallery() {
           </div>
 
           {/* Info Side */}
-          <div className="flex flex-col justify-center gap-6 bg-black bg-opacity-70 p-8 rounded-lg">
+          <div className="flex flex-col justify-center gap-6 p-8 rounded-lg relative" style={{
+            background: "linear-gradient(135deg, rgba(92, 64, 51, 0.8) 0%, rgba(76, 110, 71, 0.8) 100%)",
+            border: "4px solid #3d2f25",
+            boxShadow: "inset 0 0 30px rgba(0, 0, 0, 0.6), 0 0 30px rgba(139, 69, 19, 0.4)"
+          }}>
             <div>
               <h2 className="text-4xl md:text-5xl font-black mb-2" style={{ letterSpacing: "0.1em", color: "#fff" }}>
                 {currentCroc.name}
