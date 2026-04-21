@@ -144,8 +144,16 @@ export default function Home() {
         backgroundColor: "#0a0e27"
       }}
     >
-      {/* Top Button - Croco Palette */}
+      {/* Top Buttons - Navigation */}
       <div className="relative pt-6 px-4 z-10 flex justify-center gap-6 items-center">
+        {/* Lore Gallery Button */}
+        <a 
+          href="/lore-gallery"
+          className="px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-lime-300 font-bold rounded-full hover:shadow-lg hover:shadow-pink-500/50 transition-all"
+        >
+          ✨ Explore the 18 1/1 Legends ✨
+        </a>
+        
         <a 
           href="/croco-palette"
           className="px-8 py-3 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all shadow-lg"
