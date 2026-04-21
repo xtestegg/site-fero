@@ -107,9 +107,15 @@ export default function Home() {
 
   if (!showContent) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black relative overflow-hidden">
-        <Stars />
-
+      <div 
+        className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+        style={{
+          backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fu4ncudRtKXtDfEZO6QmRh%2FCaptura_de_tela_2026-04-21_150439_zVwGB-.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "#000"
+        }}
+      >
         <div className="relative z-10 flex flex-col items-center gap-8">
           {/* Title */}
           <div className="text-center">
