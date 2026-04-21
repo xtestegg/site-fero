@@ -151,9 +151,10 @@ export default function Home() {
           href="https://opensea.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg"
+          className="flex items-center justify-center w-14 h-14 rounded-lg bg-blue-500 hover:bg-blue-600 transition-all shadow-lg"
+          title="View on OpenSea"
         >
-          🌊 OpenSea
+          <span className="text-xl">🌊</span>
         </a>
 
         {/* Lore Gallery Button */}
