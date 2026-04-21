@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Navbar } from "../components/navbar";
 
 // CDN Asset URLs
 const ASSETS = {
@@ -144,6 +145,7 @@ export default function Home() {
         backgroundColor: "#0a0e27"
       }}
     >
+      <Navbar currentPage="home" />
       {/* ===== HERO SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
