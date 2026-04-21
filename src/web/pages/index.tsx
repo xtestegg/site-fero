@@ -428,7 +428,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <div className="w-56 h-56 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(34, 211, 238, 0.6)" }}>
                 <img 
-                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FxNjV-4-0ymzoy74HYwlAf%2Fteam_subzero.png"
+                  src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
                   alt="Feromonthes Subzero"
                   className="w-full h-full object-cover object-center"
                 />
