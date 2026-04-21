@@ -4,8 +4,17 @@ interface NavbarProps {
 
 export function Navbar({ currentPage = "home" }: NavbarProps) {
   return (
-    <div className="relative">
-      <nav className="bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg pt-4" style={{ borderBottomLeftRadius: "2rem", borderBottomRightRadius: "2rem" }}>
+    <div className="relative pt-6">
+      {/* Curved bump at top center */}
+      <div 
+        className="absolute left-1/2 transform -translate-x-1/2 -top-4 w-40 h-8 bg-gradient-to-r from-purple-600 to-pink-600"
+        style={{
+          borderRadius: "50% 50% 0 0",
+          boxShadow: "0 -2px 8px rgba(0,0,0,0.2)"
+        }}
+      />
+      
+      <nav className="bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg" style={{ borderBottomLeftRadius: "2rem", borderBottomRightRadius: "2rem" }}>
         <div className="container mx-auto max-w-6xl px-4">
           <div className="flex items-center justify-center gap-12 py-4">
             <a
@@ -41,16 +50,6 @@ export function Navbar({ currentPage = "home" }: NavbarProps) {
           </div>
         </div>
       </nav>
-      
-      {/* Curved bump in the middle */}
-      <div 
-        className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 w-32 h-12 bg-gradient-to-r from-purple-600 to-pink-600"
-        style={{
-          borderTopLeftRadius: "50% 100%",
-          borderTopRightRadius: "50% 100%",
-          boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
-        }}
-      />
     </div>
   );
 }
