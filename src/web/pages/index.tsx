@@ -43,6 +43,50 @@ function Stars({ count = 60 }: { count?: number }) {
   );
 }
 
+// Fireflies (vaga-lumes) component
+function Fireflies({ count = 20 }: { count?: number }) {
+  const fireflies = Array.from({ length: count }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    duration: Math.random() * 2 + 1.5,
+    delay: Math.random() * 3,
+  }));
+
+  return (
+    <>
+      <style>{`
+        @keyframes flicker {
+          0%, 100% { opacity: 0; }
+          50% { opacity: 1; }
+        }
+        .firefly {
+          animation: flicker var(--duration) ease-in-out infinite;
+          animation-delay: var(--delay);
+        }
+      `}</style>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {fireflies.map((f) => (
+          <div
+            key={f.id}
+            className="firefly absolute rounded-full"
+            style={{
+              width: "4px",
+              height: "4px",
+              background: "radial-gradient(circle, #ffff00, #ffcc00)",
+              left: f.x + "%",
+              top: f.y + "%",
+              boxShadow: "0 0 8px #ffff00",
+              "--duration": f.duration + "s",
+              "--delay": f.delay + "s",
+            } as any}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
+
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -116,6 +160,7 @@ export default function Home() {
           backgroundColor: "#000"
         }}
       >
+        <Fireflies count={25} />
         <div className="relative z-10 flex flex-col items-center gap-8">
           {/* Title */}
           <div className="text-center">
