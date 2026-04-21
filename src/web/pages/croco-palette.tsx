@@ -1,5 +1,4 @@
 import { useRef, useEffect } from "react";
-import { Navbar } from "../components/navbar";
 
 const ASSETS = {
   crococrocsLogo: "https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FR8qi-JMqzAZpkxT6p6jc6%2FSem_t%C3%ADtulo_(16)_L01NcW.png",
@@ -21,7 +20,6 @@ export default function CrocoPalette() {
         backgroundImage: "url('/bg-fantasy.png')",
       }}
     >
-      <Navbar currentPage="palette" />
 
       {/* The Croco Palette Section */}
       <section className="relative py-20 px-4 overflow-hidden">

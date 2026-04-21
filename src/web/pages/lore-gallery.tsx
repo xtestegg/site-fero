@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useLocation } from "wouter";
-import { Navbar } from "../components/navbar";
 
 // Stars background component
 function Stars({ count = 60 }: { count?: number }) {
@@ -162,7 +161,6 @@ export default function LoreGallery() {
 
   return (
     <div className="min-h-screen bg-black text-lime-300 font-mono relative overflow-hidden">
-      <Navbar currentPage="gallery" />
       <Stars />
 
       {/* Navigation Header */}
