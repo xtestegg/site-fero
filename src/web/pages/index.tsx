@@ -71,12 +71,12 @@ function Fireflies({ count = 20 }: { count?: number }) {
             key={f.id}
             className="firefly absolute rounded-full"
             style={{
-              width: "4px",
-              height: "4px",
+              width: "8px",
+              height: "8px",
               background: "radial-gradient(circle, #ffff00, #ffcc00)",
               left: f.x + "%",
               top: f.y + "%",
-              boxShadow: "0 0 8px #ffff00",
+              boxShadow: "0 0 12px #ffff00",
               "--duration": f.duration + "s",
               "--delay": f.delay + "s",
             } as any}
