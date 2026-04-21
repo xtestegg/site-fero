@@ -374,17 +374,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CROCO PALETTE BUTTON ===== */}
-      <section className="relative py-16 px-4 overflow-hidden text-center">
-        <div className="container mx-auto max-w-5xl relative z-10">
-          <a 
-            href="/croco-palette"
-            className="inline-block px-8 py-3 bg-lime-300 text-black font-bold text-lg rounded-lg hover:bg-lime-400 transition-all duration-300 shadow-lg"
-          >
-            View The Croco Palette
-          </a>
-        </div>
-      </section>
 
       {/* ===== FOOTER ===== */}
       <footer className="relative pt-8 pb-6 overflow-hidden">
