@@ -185,7 +185,7 @@ export default function Home() {
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2F5I-6QIOMUiYgX5XOtKhoU%2FhkVLNt5__400x400_EK4M0_.jpg"
             alt="OpenSea"
-            className="w-10 h-10 object-contain"
+            className="w-11 h-11 object-contain"
           />
         </a>
 
