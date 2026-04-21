@@ -4,7 +4,7 @@ interface NavbarProps {
 
 export function Navbar({ currentPage = "home" }: NavbarProps) {
   return (
-    <nav className="bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg">
+    <nav className="bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg" style={{ borderBottomLeftRadius: "2rem", borderBottomRightRadius: "2rem" }}>
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center justify-center gap-12 py-4">
           <a
