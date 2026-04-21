@@ -156,7 +156,7 @@ export default function Home() {
         
         <a 
           href="/croco-palette"
-          className="px-8 py-3 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all shadow-lg"
+          className="px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full hover:shadow-lg hover:shadow-pink-500/50 transition-all"
         >
           Croco Palette
         </a>
