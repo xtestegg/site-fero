@@ -196,8 +196,8 @@ export default function LoreGallery() {
                 alt={currentCroc.name}
                 className="w-full h-full object-cover rounded-xl"
                 style={{
-                  border: "12px solid #8b6914",
-                  boxShadow: "inset 0 0 10px rgba(0,0,0,0.5), 0 0 30px rgba(139, 105, 20, 0.6), 0 0 60px rgba(0,0,0,0.8)"
+                  border: "12px solid #1a1a1a",
+                  boxShadow: "inset 0 0 10px rgba(0,0,0,0.5), 0 0 30px rgba(0, 0, 0, 0.6), 0 0 60px rgba(0,0,0,0.8)"
                 }}
               />
               <div className="absolute -bottom-4 -right-4 px-4 py-2 rounded-lg" style={{ background: "#8b6914", boxShadow: "0 0 15px rgba(139, 105, 20, 0.7)" }}>
