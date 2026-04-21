@@ -464,7 +464,7 @@ export default function Home() {
 
       {/* Background Music */}
       {/* ===== TEAM SECTION ===== */}
-      <section className="relative py-20 px-4 overflow-hidden" id="team">
+      <section className="relative py-6 px-4 overflow-hidden" id="team">
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-16">
             <h2
