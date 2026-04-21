@@ -441,27 +441,6 @@ export default function Home() {
       </section>
 
 
-      {/* ===== FOOTER ===== */}
-      <footer className="relative pt-8 pb-6 overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-90"
-          style={{
-            backgroundImage: `url(${ASSETS.crococrocsLogo})`,
-            backgroundPosition: "center center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        />
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="text-center py-12">
-            <p className="text-lime-300 text-sm font-semibold mb-8">
-              © 2025 CroCoCrocs. All rights reserved.🐊
-            </p>
-          </div>
-        </div>
-      </footer>
-
       {/* Background Music */}
       {/* ===== TEAM SECTION ===== */}
       <section className="relative py-6 px-4 overflow-hidden" id="team">
@@ -510,6 +489,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ===== FOOTER ===== */}
+      <footer className="relative pt-8 pb-6 overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-90"
+          style={{
+            backgroundImage: `url(${ASSETS.crococrocsLogo})`,
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+        />
+        <div className="relative z-10 container mx-auto max-w-5xl px-4">
+          <div className="text-center py-12">
+            <p className="text-lime-300 text-sm font-semibold mb-8">
+              © 2025 CroCoCrocs. All rights reserved.🐊
+            </p>
+          </div>
+        </div>
+      </footer>
 
       <audio ref={audioRef} loop autoPlay playsInline>
         <source src="/bg-music.mp3" type="audio/mpeg" />
