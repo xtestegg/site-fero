@@ -161,7 +161,7 @@ export default function LoreGallery() {
 
   return (
     <div 
-      className="min-h-screen text-lime-300 font-mono relative overflow-hidden"
+      className="min-h-screen text-black font-mono relative overflow-hidden"
       style={{
         backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fu4ncudRtKXtDfEZO6QmRh%2FCaptura_de_tela_2026-04-21_150439_zVwGB-.png')",
         backgroundSize: "cover",
