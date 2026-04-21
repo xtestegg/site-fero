@@ -409,11 +409,11 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <p 
-                className="mt-6 text-2xl font-bold text-black"
-              >
-                Feromonthes
-              </p>
+              <div className="mt-6 px-6 py-3 bg-white rounded-lg">
+                <p className="text-2xl font-bold text-black">
+                  Feromonthes
+                </p>
+              </div>
             </div>
 
             {/* Subzero Card */}
@@ -425,11 +425,11 @@ export default function Home() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <p 
-                className="mt-6 text-2xl font-bold text-black"
-              >
-                Subzero
-              </p>
+              <div className="mt-6 px-6 py-3 bg-white rounded-lg">
+                <p className="text-2xl font-bold text-black">
+                  Subzero
+                </p>
+              </div>
             </div>
           </div>
         </div>
