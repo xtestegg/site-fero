@@ -144,6 +144,15 @@ export default function Home() {
         backgroundColor: "#0a0e27"
       }}
     >
+      {/* Top Button - Croco Palette */}
+      <div className="relative pt-6 px-4 z-10 flex justify-center">
+        <a 
+          href="/croco-palette"
+          className="px-8 py-3 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all shadow-lg"
+        >
+          Croco Palette
+        </a>
+      </div>
       {/* ===== HERO SECTION ===== */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
