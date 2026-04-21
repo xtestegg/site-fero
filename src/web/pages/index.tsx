@@ -182,7 +182,9 @@ export default function Home() {
           className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-600 transition-all shadow-lg"
           title="View on OpenSea"
         >
-          <span className="text-xl">⛵</span>
+          <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.5 9.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-15 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm7.5 12c-3.866 0-7-3.134-7-7 0-1.933.787-3.677 2.058-4.94l2.058 2.058c.487-.974 1.461-1.598 2.591-1.598s2.104.624 2.591 1.598l2.058-2.058C16.287 10.823 17.074 12.567 17.074 14.5c0 3.866-3.134 7-7 7z"/>
+          </svg>
         </a>
 
         <a
