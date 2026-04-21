@@ -25,8 +25,10 @@ export function Navbar({ currentPage = "home" }: NavbarProps) {
         <img 
           src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fw2Z1Z5dcNu7wAqICzlq11%2FSem_t%C3%ADtulo_(17)_5TKIet.png"
           alt="CrocoCrocs Logo"
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-contain"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain"
           style={{
+            height: "60.8px",
+            width: "60.8px",
             filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))"
           }}
         />
