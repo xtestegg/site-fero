@@ -399,10 +399,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10">
             {/* Godzilla Card */}
             <div className="flex flex-col items-center">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(168, 85, 247, 0.6)" }}>
+              <div className="w-56 h-56 rounded-full overflow-hidden border-4 shadow-2xl hover:shadow-lime-300/50 transition-all duration-300" style={{ borderColor: "rgba(168, 85, 247, 0.6)" }}>
                 <img 
                   src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FzMG4X6Y0Q6OxFw2WVJlBk%2F10_4Kf4xL.png"
                   alt="Feromonthes Godzilla"
@@ -444,7 +444,7 @@ export default function Home() {
                   filter: "drop-shadow(0 0 10px rgba(6, 182, 212, 0.4))"
                 }}
               >
-                Feromonthes
+                Subzero
               </p>
             </div>
           </div>
