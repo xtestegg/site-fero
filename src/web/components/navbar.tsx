@@ -42,7 +42,7 @@ export function Navbar({ currentPage = "home" }: NavbarProps) {
       
       {/* Curved bump in the center bottom */}
       <div 
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-full w-40 h-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-b-3xl"
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-full w-56 h-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-b-3xl"
         style={{
           boxShadow: "0 4px 8px rgba(0,0,0,0.2)"
         }}
