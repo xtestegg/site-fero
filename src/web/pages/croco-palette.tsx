@@ -27,7 +27,7 @@ export default function CrocoPalette() {
             href="/"
             className="inline-block px-6 py-2 bg-lime-300 text-black font-bold rounded-lg hover:bg-lime-400 transition-all"
           >
-            ← Voltar
+            ← Back
           </a>
         </div>
       </div>
