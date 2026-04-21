@@ -178,7 +178,7 @@ export default function LoreGallery() {
         >
           ← BACK TO HOME
         </button>
-        <h1 className="text-4xl md:text-5xl font-black bg-black bg-opacity-70 px-6 py-3 rounded-lg" style={{ letterSpacing: "0.15em", color: "#fff" }}>
+        <h1 className="text-4xl md:text-5xl font-black px-6 py-3 rounded-lg" style={{ letterSpacing: "0.15em", color: "#fff", background: "linear-gradient(135deg, rgba(92, 64, 51, 0.9) 0%, rgba(76, 110, 71, 0.9) 100%)", border: "3px solid #3d2f25", boxShadow: "0 0 20px rgba(139, 69, 19, 0.5)" }}>
           LORE GALLERY
         </h1>
         <div className="w-24" /> {/* Spacer for alignment */}
