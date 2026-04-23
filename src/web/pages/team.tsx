@@ -46,7 +46,7 @@ export default function Team() {
             }}
           >
             <img 
-              src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2F0Juj3Q0LfQhKFKGwVRf8Z%2Fteam_subzero.png"
+              src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
               alt="Subzero"
               className="w-full h-full object-cover"
             />
