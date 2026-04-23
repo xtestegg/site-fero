@@ -49,7 +49,7 @@ export default function Team() {
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
             alt="Feromonthes"
-            style={{ width: "100%", height: "260px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
+            style={{ width: "100%", height: "380px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
           />
           <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff" }}>FEROMONTHES</h2>
           <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.7)", padding: "8px 16px", borderRadius: "20px" }}>✨ CREATIVE BOSS ✨</p>
@@ -76,7 +76,7 @@ export default function Team() {
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
             alt="Subzero"
-            style={{ width: "100%", height: "260px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
+            style={{ width: "100%", height: "380px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
           />
           <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
           <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.7)", padding: "8px 16px", borderRadius: "20px" }}>⚡ TECH WIZARD ⚡</p>
