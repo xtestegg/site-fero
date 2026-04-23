@@ -49,22 +49,23 @@ export default function Team() {
           position: "absolute", 
           top: "20px", 
           left: "20px", 
-          padding: "12px 24px", 
-          backgroundColor: "#FFD700", 
-          color: "#000", 
-          border: "3px solid #FFA500", 
-          borderRadius: "20px", 
+          padding: "12px 28px", 
+          background: "linear-gradient(135deg, #FF1493, #FF69B4, #9932CC)",
+          color: "#fff", 
+          border: "none", 
+          borderRadius: "30px", 
           cursor: "pointer", 
-          fontWeight: "bold", 
-          fontSize: "16px", 
-          boxShadow: "0 5px 15px rgba(0,0,0,0.3)",
+          fontWeight: "900", 
+          fontSize: "18px", 
+          boxShadow: "0 8px 20px rgba(255, 20, 147, 0.4)",
           zIndex: 100,
-          transition: "all 0.3s"
+          transition: "all 0.3s",
+          letterSpacing: "0.05em"
         }}
-        onMouseOver={(e) => e.target.style.transform = "scale(1.1)"}
-        onMouseOut={(e) => e.target.style.transform = "scale(1)"}
+        onMouseOver={(e) => e.target.style.transform = "scale(1.1) rotate(-2deg)"}
+        onMouseOut={(e) => e.target.style.transform = "scale(1) rotate(0deg)"}
       >
-        ← BACK
+        ← BACK HOME
       </button>
 
       <div style={{ textAlign: "center", marginBottom: "50px", zIndex: 10, position: "relative" }}>
