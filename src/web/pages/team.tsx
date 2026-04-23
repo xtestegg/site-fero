@@ -4,58 +4,43 @@ export default function Team() {
   const [, navigate] = useLocation();
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white p-8 flex flex-col items-center justify-center">
+    <div style={{ minHeight: "100vh", backgroundColor: "#1a1a2e", color: "white", padding: "40px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
       <button 
         onClick={() => navigate("/")}
-        className="absolute top-8 left-8 px-6 py-2 bg-lime-400 text-black rounded-lg font-bold hover:bg-lime-300 transition-all"
+        style={{ position: "absolute", top: "20px", left: "20px", padding: "10px 20px", backgroundColor: "#00ff00", color: "#000", border: "none", borderRadius: "6px", cursor: "pointer", fontWeight: "bold" }}
       >
-        ← BACK TO HOME
+        ← BACK
       </button>
 
-      <h1 className="text-7xl font-black text-center mb-20">OUR TEAM</h1>
+      <h1 style={{ fontSize: "60px", fontWeight: "bold", marginBottom: "60px", textAlign: "center" }}>OUR TEAM</h1>
 
-      <div className="flex gap-24 items-center justify-center">
+      <div style={{ display: "flex", gap: "80px", justifyContent: "center", alignItems: "flex-start" }}>
         {/* Feromonthes */}
-        <div className="flex flex-col items-center">
-          <div 
-            className="w-72 h-72 rounded-full overflow-hidden shadow-2xl flex items-center justify-center"
-            style={{
-              border: "8px solid",
-              borderColor: "rgba(34, 197, 94, 0.8)",
-              boxShadow: "0 0 30px rgba(168, 85, 247, 0.6), inset 0 0 20px rgba(168, 85, 247, 0.3)"
-            }}
-          >
+        <div style={{ textAlign: "center" }}>
+          <div style={{ width: "280px", height: "280px", borderRadius: "50%", border: "6px solid #00ff00", overflow: "hidden", marginBottom: "30px", boxShadow: "0 0 30px rgba(0, 255, 0, 0.5)" }}>
             <img 
               src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
               alt="Feromonthes"
-              className="w-full h-full object-cover"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
-          <h2 className="text-4xl font-bold text-lime-400 mt-8">Feromonthes</h2>
-          <p className="text-lg text-gray-300 mt-2">Lead Designer & Creative Director</p>
+          <h2 style={{ fontSize: "28px", fontWeight: "bold", color: "#00ff00", marginBottom: "10px" }}>Feromonthes</h2>
+          <p style={{ fontSize: "16px", color: "#aaa" }}>Lead Designer</p>
         </div>
 
         {/* Subzero */}
-        <div className="flex flex-col items-center">
-          <div 
-            className="w-72 h-72 rounded-full overflow-hidden shadow-2xl flex items-center justify-center"
-            style={{
-              border: "8px solid",
-              borderColor: "rgba(34, 211, 238, 0.8)",
-              boxShadow: "0 0 30px rgba(34, 211, 238, 0.6), inset 0 0 20px rgba(34, 211, 238, 0.3)"
-            }}
-          >
+        <div style={{ textAlign: "center" }}>
+          <div style={{ width: "280px", height: "280px", borderRadius: "50%", border: "6px solid #00ffff", overflow: "hidden", marginBottom: "30px", boxShadow: "0 0 30px rgba(0, 255, 255, 0.5)" }}>
             <img 
               src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
               alt="Subzero"
-              className="w-full h-full object-cover"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
-          <h2 className="text-4xl font-bold text-cyan-400 mt-8">Subzero</h2>
-          <p className="text-lg text-gray-300 mt-2">Lead Developer & Technical Lead</p>
+          <h2 style={{ fontSize: "28px", fontWeight: "bold", color: "#00ffff", marginBottom: "10px" }}>Subzero</h2>
+          <p style={{ fontSize: "16px", color: "#aaa" }}>Lead Developer</p>
         </div>
       </div>
     </div>
   );
 }
-
