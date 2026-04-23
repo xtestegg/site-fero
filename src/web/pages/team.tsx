@@ -14,12 +14,41 @@ export default function Team() {
   }));
 
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%)", backgroundSize: "400% 400%", animation: "gradient 15s ease infinite", padding: "40px 20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #2d1b4e 0%, #1a1a2e 50%, #8B4513 100%)", backgroundSize: "400% 400%", animation: "gradientShift 8s ease infinite", padding: "40px 20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
       <style>{`
-        @keyframes gradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+        @keyframes gradientShift {
+          0% { background-position: 0% 0%; }
+          50% { background-position: 100% 100%; }
+          100% { background-position: 0% 0%; }
+        }
+        
+        @keyframes moonGlow {
+          0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 200, 100, 0.5)); }
+          50% { filter: drop-shadow(0 0 40px rgba(255, 200, 100, 0.8)); }
+        }
+        
+        @keyframes planetMove {
+          0%, 100% { transform: translateX(0) translateY(0); }
+          25% { transform: translateX(10px) translateY(-5px); }
+          50% { transform: translateX(0) translateY(10px); }
+          75% { transform: translateX(-10px) translateY(-5px); }
+        }
+        
+        @keyframes starsShine {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+        
+        .moon {
+          animation: moonGlow 3s ease-in-out infinite;
+        }
+        
+        .planet {
+          animation: planetMove 6s ease-in-out infinite;
+        }
+        
+        .star {
+          animation: starsShine 2s ease-in-out infinite;
         }
         
         @keyframes float {
@@ -98,6 +127,31 @@ export default function Team() {
         }
       `}</style>
 
+      {/* Lua no fundo */}
+      <div className="moon" style={{ position: "absolute", width: "200px", height: "200px", background: "radial-gradient(circle at 30% 30%, #FFE5B4, #FF8C00)", borderRadius: "50%", top: "10%", right: "15%", opacity: "0.6", zIndex: 1 }} />
+      
+      {/* Planeta azul */}
+      <div className="planet" style={{ position: "absolute", width: "100px", height: "100px", background: "radial-gradient(circle at 40% 40%, #87CEEB, #4A90E2)", borderRadius: "50%", top: "20%", left: "10%", opacity: "0.5", zIndex: 1 }} />
+
+      {/* Estrelas */}
+      {Array.from({ length: 40 }).map((_, i) => (
+        <div
+          key={i}
+          className="star"
+          style={{
+            position: "absolute",
+            width: "2px",
+            height: "2px",
+            background: "#fff",
+            borderRadius: "50%",
+            top: `${Math.random() * 70}%`,
+            left: `${Math.random() * 100}%`,
+            zIndex: 1,
+            animationDelay: `${Math.random() * 2}s`
+          }}
+        />
+      ))}
+
       {/* Partículas animadas */}
       {particles.map(p => (
         <div
@@ -110,6 +164,7 @@ export default function Team() {
             height: `${p.size}px`,
             animationDuration: `${p.duration}s`,
             animationDelay: `${p.delay}s`,
+            zIndex: 2
           }}
         />
       ))}
