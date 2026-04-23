@@ -3,54 +3,21 @@ import { useLocation } from "wouter";
 export default function Team() {
   const [, navigate] = useLocation();
 
-  // Gerar partículas aleatórias
-  const particles = Array.from({ length: 30 }, (_, i) => ({
-    id: i,
-    left: Math.random() * 100,
-    top: Math.random() * 100,
-    delay: Math.random() * 5,
-    duration: Math.random() * 3 + 2,
-    size: Math.random() * 4 + 2,
-  }));
-
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #2d1b4e 0%, #1a1a2e 50%, #8B4513 100%)", backgroundSize: "400% 400%", animation: "gradientShift 8s ease infinite", padding: "40px 20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
+    <div style={{ 
+      minHeight: "100vh", 
+      background: "#1a1a3e url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><radialGradient id=%22moon%22><stop offset=%220%%22 style=%22stop-color:rgb(255,200,100);stop-opacity:1%22 /><stop offset=%22100%%22 style=%22stop-color:rgb(200,150,50);stop-opacity:1%22 /></radialGradient></defs></svg>')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      padding: "40px 20px", 
+      display: "flex", 
+      flexDirection: "column", 
+      alignItems: "center", 
+      justifyContent: "center", 
+      position: "relative", 
+      overflow: "hidden"
+    }}>
       <style>{`
-        @keyframes gradientShift {
-          0% { background-position: 0% 0%; }
-          50% { background-position: 100% 100%; }
-          100% { background-position: 0% 0%; }
-        }
-        
-        @keyframes moonGlow {
-          0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 200, 100, 0.5)); }
-          50% { filter: drop-shadow(0 0 40px rgba(255, 200, 100, 0.8)); }
-        }
-        
-        @keyframes planetMove {
-          0%, 100% { transform: translateX(0) translateY(0); }
-          25% { transform: translateX(10px) translateY(-5px); }
-          50% { transform: translateX(0) translateY(10px); }
-          75% { transform: translateX(-10px) translateY(-5px); }
-        }
-        
-        @keyframes starsShine {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
-        }
-        
-        .moon {
-          animation: moonGlow 3s ease-in-out infinite;
-        }
-        
-        .planet {
-          animation: planetMove 6s ease-in-out infinite;
-        }
-        
-        .star {
-          animation: starsShine 2s ease-in-out infinite;
-        }
-        
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-20px); }
@@ -76,30 +43,19 @@ export default function Team() {
           50% { transform: rotate(2deg); }
         }
         
-        @keyframes rise {
-          0% {
-            bottom: -50px;
-            opacity: 0;
-          }
-          10% {
-            opacity: 1;
-          }
-          90% {
-            opacity: 1;
-          }
-          100% {
-            bottom: 100vh;
-            opacity: 0;
-            transform: translateX(100px);
-          }
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
         }
         
-        .particle {
-          position: absolute;
-          background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0));
-          border-radius: 50%;
-          pointer-events: none;
-          animation: rise linear infinite;
+        @keyframes moonGlow {
+          0%, 100% { box-shadow: 0 0 20px rgba(255, 200, 100, 0.5); }
+          50% { box-shadow: 0 0 50px rgba(255, 200, 100, 0.8); }
+        }
+        
+        @keyframes planetMove {
+          0%, 100% { transform: translateX(0) translateY(0); }
+          50% { transform: translateX(20px) translateY(-20px); }
         }
         
         .team-card-fero {
@@ -125,46 +81,61 @@ export default function Team() {
         .text-pulse {
           animation: pulse 2s ease-in-out infinite;
         }
+        
+        .star {
+          animation: twinkle 2s ease-in-out infinite;
+        }
+        
+        .moon {
+          animation: moonGlow 3s ease-in-out infinite;
+        }
+        
+        .planet {
+          animation: planetMove 6s ease-in-out infinite;
+        }
       `}</style>
 
-      {/* Lua no fundo */}
-      <div className="moon" style={{ position: "absolute", width: "200px", height: "200px", background: "radial-gradient(circle at 30% 30%, #FFE5B4, #FF8C00)", borderRadius: "50%", top: "10%", right: "15%", opacity: "0.6", zIndex: 1 }} />
-      
-      {/* Planeta azul */}
-      <div className="planet" style={{ position: "absolute", width: "100px", height: "100px", background: "radial-gradient(circle at 40% 40%, #87CEEB, #4A90E2)", borderRadius: "50%", top: "20%", left: "10%", opacity: "0.5", zIndex: 1 }} />
+      {/* Lua */}
+      <div className="moon" style={{
+        position: "absolute",
+        width: "150px",
+        height: "150px",
+        background: "radial-gradient(circle at 35% 35%, #FFE5B4, #FF8C00)",
+        borderRadius: "50%",
+        top: "5%",
+        right: "10%",
+        opacity: "0.7",
+        zIndex: 1
+      }} />
+
+      {/* Planeta */}
+      <div className="planet" style={{
+        position: "absolute",
+        width: "80px",
+        height: "80px",
+        background: "radial-gradient(circle at 35% 35%, #87CEEB, #4A90E2)",
+        borderRadius: "50%",
+        top: "30%",
+        left: "8%",
+        opacity: "0.6",
+        zIndex: 1
+      }} />
 
       {/* Estrelas */}
-      {Array.from({ length: 40 }).map((_, i) => (
+      {Array.from({ length: 50 }).map((_, i) => (
         <div
           key={i}
           className="star"
           style={{
             position: "absolute",
-            width: "2px",
-            height: "2px",
+            width: Math.random() * 3 + "px",
+            height: Math.random() * 3 + "px",
             background: "#fff",
             borderRadius: "50%",
-            top: `${Math.random() * 70}%`,
-            left: `${Math.random() * 100}%`,
+            top: Math.random() * 100 + "%",
+            left: Math.random() * 100 + "%",
             zIndex: 1,
-            animationDelay: `${Math.random() * 2}s`
-          }}
-        />
-      ))}
-
-      {/* Partículas animadas */}
-      {particles.map(p => (
-        <div
-          key={p.id}
-          className="particle"
-          style={{
-            left: `${p.left}%`,
-            bottom: "0",
-            width: `${p.size}px`,
-            height: `${p.size}px`,
-            animationDuration: `${p.duration}s`,
-            animationDelay: `${p.delay}s`,
-            zIndex: 2
+            animationDelay: Math.random() * 2 + "s"
           }}
         />
       ))}
@@ -193,7 +164,7 @@ export default function Team() {
         ← BACK
       </button>
 
-      <div style={{ textAlign: "center", marginBottom: "50px", zIndex: 10 }}>
+      <div style={{ textAlign: "center", marginBottom: "50px", zIndex: 10, position: "relative" }}>
         <h1 className="title-bounce" style={{ 
           fontSize: "72px", 
           fontWeight: "900", 
@@ -207,7 +178,7 @@ export default function Team() {
         <p className="text-pulse" style={{ fontSize: "24px", color: "#fff", fontWeight: "bold", textShadow: "2px 2px 0px #000" }}>Meet the CroCrocs Legends!</p>
       </div>
 
-      <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "stretch", maxWidth: "1100px", width: "100%", flexWrap: "wrap", zIndex: 10 }}>
+      <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "stretch", maxWidth: "1100px", width: "100%", flexWrap: "wrap", zIndex: 10, position: "relative" }}>
         {/* Feromonthes Card */}
         <div 
           className="team-card-fero"
@@ -281,7 +252,7 @@ export default function Team() {
         </div>
       </div>
 
-      <div className="emoji-float" style={{ marginTop: "50px", fontSize: "50px", textAlign: "center", zIndex: 10 }}>
+      <div className="emoji-float" style={{ marginTop: "50px", fontSize: "50px", textAlign: "center", zIndex: 10, position: "relative" }}>
         🐊 🎮 🎨 💻 🐊
       </div>
     </div>
