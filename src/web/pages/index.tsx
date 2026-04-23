@@ -213,6 +213,12 @@ export default function Home() {
         </a>
         
         {/* Social Icons */}
+        <button 
+          onClick={() => navigate("/team")}
+          className="px-6 py-2 rounded-lg border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-lime-300 transition-all duration-300 font-bold"
+        >
+          TEAM
+        </button>
         <a
           href="https://discord.gg/J6ZUWvARsY"
           target="_blank"
