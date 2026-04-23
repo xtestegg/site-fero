@@ -5,12 +5,8 @@ export default function Team() {
 
   return (
     <div 
-      className="min-h-screen text-lime-300"
+      className="min-h-screen text-white"
       style={{
-        backgroundImage: "url('/bg-fantasy.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
         backgroundColor: "#0a0e27"
       }}
     >
@@ -19,7 +15,7 @@ export default function Team() {
         {/* Back to Home Button */}
         <button 
           onClick={() => navigate("/")}
-          className="px-6 py-2 rounded-lg border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-lime-300 transition-all duration-300"
+          className="px-6 py-2 rounded-lg border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-white transition-all duration-300"
         >
           ← BACK TO HOME
         </button>
