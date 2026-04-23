@@ -6,9 +6,7 @@ export default function Team() {
   return (
     <div style={{ 
       minHeight: "100vh", 
-      background: "#1a1a3e url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><radialGradient id=%22moon%22><stop offset=%220%%22 style=%22stop-color:rgb(255,200,100);stop-opacity:1%22 /><stop offset=%22100%%22 style=%22stop-color:rgb(200,150,50);stop-opacity:1%22 /></radialGradient></defs></svg>')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
+      background: "linear-gradient(180deg, #2a1f4d 0%, #3d2a5c 20%, #5a3a70 40%, #d4724a 60%, #f5a66b 80%, #ff9d5c 100%)",
       padding: "40px 20px", 
       display: "flex", 
       flexDirection: "column", 
@@ -49,8 +47,8 @@ export default function Team() {
         }
         
         @keyframes moonGlow {
-          0%, 100% { box-shadow: 0 0 20px rgba(255, 200, 100, 0.5); }
-          50% { box-shadow: 0 0 50px rgba(255, 200, 100, 0.8); }
+          0%, 100% { box-shadow: 0 0 30px rgba(255, 200, 100, 0.6), inset -30px -30px 60px rgba(0,0,0,0.3); }
+          50% { box-shadow: 0 0 60px rgba(255, 200, 100, 0.9), inset -30px -30px 60px rgba(0,0,0,0.3); }
         }
         
         @keyframes planetMove {
@@ -87,42 +85,86 @@ export default function Team() {
         }
         
         .moon {
-          animation: moonGlow 3s ease-in-out infinite;
+          animation: moonGlow 4s ease-in-out infinite;
         }
         
-        .planet {
-          animation: planetMove 6s ease-in-out infinite;
+        /* Montanhas */
+        .mountain {
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(135deg, #cc4400 0%, #ff6600 50%, #ff8833 100%);
+          clip-path: polygon(0% 100%, 50% 30%, 100% 100%);
+        }
+        
+        .mountain-left {
+          left: 0;
+          width: 300px;
+          height: 400px;
+          opacity: 0.8;
+        }
+        
+        .mountain-right {
+          right: 0;
+          width: 280px;
+          height: 350px;
+          opacity: 0.8;
+        }
+        
+        .mountain-middle {
+          left: 35%;
+          width: 250px;
+          height: 300px;
+          opacity: 0.6;
+          background: linear-gradient(135deg, #884400 0%, #cc6600 50%, #ff7722 100%);
         }
       `}</style>
 
-      {/* Lua */}
+      {/* Montanhas */}
+      <div className="mountain mountain-left" />
+      <div className="mountain mountain-middle" />
+      <div className="mountain mountain-right" />
+
+      {/* Lua grande */}
       <div className="moon" style={{
         position: "absolute",
-        width: "150px",
-        height: "150px",
-        background: "radial-gradient(circle at 35% 35%, #FFE5B4, #FF8C00)",
+        width: "300px",
+        height: "300px",
+        background: "radial-gradient(circle at 30% 30%, #FFE5B4, #FF8C00, #CC4400)",
         borderRadius: "50%",
-        top: "5%",
-        right: "10%",
+        top: "-50px",
+        left: "5%",
+        opacity: "0.9",
+        zIndex: 2
+      }} />
+
+      {/* Planeta azul à direita */}
+      <div className="planet" style={{
+        position: "absolute",
+        width: "120px",
+        height: "120px",
+        background: "radial-gradient(circle at 35% 35%, #87CEEB, #4A90E2)",
+        borderRadius: "50%",
+        top: "15%",
+        right: "15%",
         opacity: "0.7",
         zIndex: 1
       }} />
 
-      {/* Planeta */}
-      <div className="planet" style={{
+      {/* Planeta menor no topo direito */}
+      <div style={{
         position: "absolute",
-        width: "80px",
-        height: "80px",
-        background: "radial-gradient(circle at 35% 35%, #87CEEB, #4A90E2)",
+        width: "40px",
+        height: "40px",
+        background: "#6B9BD1",
         borderRadius: "50%",
-        top: "30%",
-        left: "8%",
-        opacity: "0.6",
+        top: "10%",
+        right: "25%",
+        opacity: "0.5",
         zIndex: 1
       }} />
 
       {/* Estrelas */}
-      {Array.from({ length: 50 }).map((_, i) => (
+      {Array.from({ length: 60 }).map((_, i) => (
         <div
           key={i}
           className="star"
@@ -132,7 +174,7 @@ export default function Team() {
             height: Math.random() * 3 + "px",
             background: "#fff",
             borderRadius: "50%",
-            top: Math.random() * 100 + "%",
+            top: Math.random() * 60 + "%",
             left: Math.random() * 100 + "%",
             zIndex: 1,
             animationDelay: Math.random() * 2 + "s"
