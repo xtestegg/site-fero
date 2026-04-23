@@ -32,27 +32,35 @@ export default function Team() {
           50% { opacity: 0.7; }
         }
         
-        .team-card {
-          transition: all 0.3s ease;
+        @keyframes wobble {
+          0%, 100% { transform: rotate(-5deg); }
+          50% { transform: rotate(2deg); }
         }
         
-        .team-card:hover {
-          transform: rotate(0deg) scale(1.05) !important;
+        .team-card-fero {
+          animation: wobble 2s ease-in-out infinite, float 3s ease-in-out infinite 0.5s;
         }
         
-        .floating-emoji {
-          position: absolute;
-          font-size: 40px;
+        .team-card-subzero {
+          animation: wobble 2s ease-in-out infinite 0.2s, float 3s ease-in-out infinite;
+        }
+        
+        .title-bounce {
+          animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .emoji-float {
           animation: float 3s ease-in-out infinite;
-          pointer-events: none;
+        }
+        
+        .emoji-spin {
+          animation: spin 3s linear infinite;
+        }
+        
+        .text-pulse {
+          animation: pulse 2s ease-in-out infinite;
         }
       `}</style>
-
-      {/* Floating emojis */}
-      <div className="floating-emoji" style={{ top: "10%", left: "10%", animation: "float 4s ease-in-out infinite" }}>🎉</div>
-      <div className="floating-emoji" style={{ top: "20%", right: "10%", animation: "float 5s ease-in-out infinite 1s" }}>🦖</div>
-      <div className="floating-emoji" style={{ bottom: "20%", left: "5%", animation: "float 6s ease-in-out infinite 2s" }}>❄️</div>
-      <div className="floating-emoji" style={{ bottom: "10%", right: "5%", animation: "float 4.5s ease-in-out infinite 0.5s" }}>🎨</div>
 
       <button 
         onClick={() => navigate("/")}
@@ -68,37 +76,34 @@ export default function Team() {
           cursor: "pointer", 
           fontWeight: "bold", 
           fontSize: "16px", 
-          transform: "rotate(-5deg)", 
           boxShadow: "0 5px 15px rgba(0,0,0,0.3)",
-          transition: "all 0.3s",
-          zIndex: 100
+          zIndex: 100,
+          transition: "all 0.3s"
         }}
-        onMouseOver={(e) => e.target.style.transform = "rotate(5deg) scale(1.1)"}
-        onMouseOut={(e) => e.target.style.transform = "rotate(-5deg)"}
+        onMouseOver={(e) => e.target.style.transform = "scale(1.1)"}
+        onMouseOut={(e) => e.target.style.transform = "scale(1)"}
       >
         ← BACK
       </button>
 
       <div style={{ textAlign: "center", marginBottom: "50px", zIndex: 10 }}>
-        <h1 style={{ 
+        <h1 className="title-bounce" style={{ 
           fontSize: "72px", 
           fontWeight: "900", 
           marginBottom: "10px", 
           color: "#fff", 
           textShadow: "4px 4px 0px #000, 8px 8px 0px rgba(0,0,0,0.3)", 
-          transform: "rotate(-3deg)", 
-          fontStyle: "italic",
-          animation: "bounce 2s ease-in-out infinite"
+          fontStyle: "italic"
         }}>
           🎉 OUR TEAM 🎉
         </h1>
-        <p style={{ fontSize: "24px", color: "#fff", fontWeight: "bold", textShadow: "2px 2px 0px #000", animation: "pulse 2s ease-in-out infinite" }}>Meet the CroCrocs Legends!</p>
+        <p className="text-pulse" style={{ fontSize: "24px", color: "#fff", fontWeight: "bold", textShadow: "2px 2px 0px #000" }}>Meet the CroCrocs Legends!</p>
       </div>
 
       <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "stretch", maxWidth: "1100px", width: "100%", flexWrap: "wrap", zIndex: 10 }}>
         {/* Feromonthes Card */}
         <div 
-          className="team-card"
+          className="team-card-fero"
           style={{ 
             flex: "1 1 350px",
             background: "linear-gradient(135deg, #FF6B6B 0%, #FFD93D 50%, #6BCB77 100%)",
@@ -112,13 +117,15 @@ export default function Team() {
             justifyContent: "flex-end",
             minHeight: "500px",
             border: "5px dashed #fff",
-            transform: "rotate(-5deg) scale(1.02)",
-            transition: "transform 0.3s",
-            position: "relative"
+            position: "relative",
+            cursor: "pointer",
+            transition: "transform 0.3s"
           }}
+          onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
+          onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
         >
-          <div style={{ position: "absolute", top: "15px", right: "15px", fontSize: "40px", animation: "spin 3s linear infinite" }}>🦖</div>
-          <div style={{ position: "absolute", top: "15px", left: "15px", fontSize: "35px", animation: "bounce 2s ease-in-out infinite" }}>✨</div>
+          <div className="emoji-spin" style={{ position: "absolute", top: "15px", right: "15px", fontSize: "40px" }}>🦖</div>
+          <div className="emoji-float" style={{ position: "absolute", top: "15px", left: "15px", fontSize: "35px" }}>✨</div>
           
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
@@ -126,13 +133,13 @@ export default function Team() {
             style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           
-          <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff", animation: "pulse 3s ease-in-out infinite" }}>FEROMONTHES</h2>
-          <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px", animation: "float 3s ease-in-out infinite" }}>✨ CREATIVE BOSS ✨</p>
+          <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff" }}>FEROMONTHES</h2>
+          <p className="emoji-float" style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px" }}>✨ CREATIVE BOSS ✨</p>
         </div>
 
         {/* Subzero Card */}
         <div 
-          className="team-card"
+          className="team-card-subzero"
           style={{ 
             flex: "1 1 350px",
             background: "linear-gradient(135deg, #4ECDC4 0%, #44A08D 50%, #087E8B 100%)",
@@ -146,13 +153,15 @@ export default function Team() {
             justifyContent: "flex-end",
             minHeight: "500px",
             border: "5px dashed #fff",
-            transform: "rotate(5deg) scale(1.02)",
-            transition: "transform 0.3s",
-            position: "relative"
+            position: "relative",
+            cursor: "pointer",
+            transition: "transform 0.3s"
           }}
+          onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
+          onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
         >
-          <div style={{ position: "absolute", top: "15px", left: "15px", fontSize: "40px", animation: "spin 3s linear infinite reverse" }}>❄️</div>
-          <div style={{ position: "absolute", top: "15px", right: "15px", fontSize: "35px", animation: "bounce 2s ease-in-out infinite 0.5s" }}>⚡</div>
+          <div className="emoji-spin" style={{ position: "absolute", top: "15px", left: "15px", fontSize: "40px" }}>❄️</div>
+          <div className="emoji-float" style={{ position: "absolute", top: "15px", right: "15px", fontSize: "35px" }}>⚡</div>
           
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
@@ -160,12 +169,12 @@ export default function Team() {
             style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           
-          <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000", animation: "pulse 3s ease-in-out infinite 0.5s" }}>SUBZERO</h2>
-          <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px", animation: "float 3s ease-in-out infinite 0.5s" }}>⚡ TECH WIZARD ⚡</p>
+          <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
+          <p className="emoji-float" style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px" }}>⚡ TECH WIZARD ⚡</p>
         </div>
       </div>
 
-      <div style={{ marginTop: "50px", fontSize: "50px", textAlign: "center", zIndex: 10, animation: "bounce 3s ease-in-out infinite" }}>
+      <div className="emoji-float" style={{ marginTop: "50px", fontSize: "50px", textAlign: "center", zIndex: 10 }}>
         🐊 🎮 🎨 💻 🐊
       </div>
     </div>
