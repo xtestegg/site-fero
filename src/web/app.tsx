@@ -2,6 +2,7 @@ import { Route, Switch } from "wouter";
 import Index from "./pages/index";
 import LoreGallery from "./pages/lore-gallery";
 import CrocoPalette from "./pages/croco-palette";
+import Team from "./pages/team";
 import { Provider } from "./components/provider";
 import { AgentFeedback } from "@runablehq/website-runtime";
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" component={Index} />
         <Route path="/lore-gallery" component={LoreGallery} />
         <Route path="/croco-palette" component={CrocoPalette} />
+        <Route path="/team" component={Team} />
       </Switch>
       {/* Do not remove — off by default, activated by parent iframe via postMessage */}
       {import.meta.env.DEV && <AgentFeedback />}
