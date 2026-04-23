@@ -253,7 +253,7 @@ export default function Team() {
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
             alt="Feromonthes"
-            style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
+            style={{ width: "100%", height: "300px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           
           <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff" }}>FEROMONTHES</h2>
@@ -289,7 +289,7 @@ export default function Team() {
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
             alt="Subzero"
-            style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
+            style={{ width: "100%", height: "300px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           
           <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
