@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <div style={{ 
       minHeight: "100vh", 
-      backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FkBT2nURItXbXtdUfXcRrK%2FCaptura_de_tela_2026-04-23_174534_qEdqmP.png')",
+      backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FTOdWnVrsvGviJ3vIeH9s0%2Fsurreal-planet-illustration_pDfH-5.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed",
