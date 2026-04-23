@@ -33,23 +33,22 @@ export default function Team() {
           flex: "1 1 350px",
           background: "linear-gradient(135deg, #FF6B6B 0%, #FFD93D 50%, #6BCB77 100%)",
           borderRadius: "30px",
-          padding: "30px",
+          padding: "15px",
           textAlign: "center",
           boxShadow: "0 15px 40px rgba(0,0,0,0.3)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "flex-end",
-          minHeight: "450px",
+          minHeight: "500px",
           border: "5px dashed #fff",
           transform: "rotate(-5deg) scale(1.02)",
           transition: "transform 0.3s"
         }}>
-          <div style={{ fontSize: "60px", marginBottom: "10px" }}>🦖</div>
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
             alt="Feromonthes"
-            style={{ width: "100%", height: "380px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
+            style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff" }}>FEROMONTHES</h2>
           <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.7)", padding: "8px 16px", borderRadius: "20px" }}>✨ CREATIVE BOSS ✨</p>
@@ -60,23 +59,22 @@ export default function Team() {
           flex: "1 1 350px",
           background: "linear-gradient(135deg, #4ECDC4 0%, #44A08D 50%, #087E8B 100%)",
           borderRadius: "30px",
-          padding: "30px",
+          padding: "15px",
           textAlign: "center",
           boxShadow: "0 15px 40px rgba(0,0,0,0.3)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "flex-end",
-          minHeight: "450px",
+          minHeight: "500px",
           border: "5px dashed #fff",
           transform: "rotate(5deg) scale(1.02)",
           transition: "transform 0.3s"
         }}>
-          <div style={{ fontSize: "60px", marginBottom: "10px" }}>❄️</div>
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
             alt="Subzero"
-            style={{ width: "100%", height: "380px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))" }}
+            style={{ width: "100%", height: "420px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
           />
           <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
           <p style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.7)", padding: "8px 16px", borderRadius: "20px" }}>⚡ TECH WIZARD ⚡</p>
