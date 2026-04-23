@@ -24,11 +24,6 @@ export default function Team() {
           50% { transform: translateY(-20px); }
         }
         
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        
         @keyframes bounce {
           0%, 100% { transform: scale(1); }
           50% { transform: scale(1.1); }
@@ -39,151 +34,14 @@ export default function Team() {
           50% { opacity: 0.7; }
         }
         
-        @keyframes wobble {
-          0%, 100% { transform: rotate(-5deg); }
-          50% { transform: rotate(2deg); }
-        }
-        
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
-        }
-        
-        @keyframes moonGlow {
-          0%, 100% { box-shadow: 0 0 30px rgba(255, 200, 100, 0.6), inset -30px -30px 60px rgba(0,0,0,0.3); }
-          50% { box-shadow: 0 0 60px rgba(255, 200, 100, 0.9), inset -30px -30px 60px rgba(0,0,0,0.3); }
-        }
-        
-        @keyframes planetMove {
-          0%, 100% { transform: translateX(0) translateY(0); }
-          50% { transform: translateX(20px) translateY(-20px); }
-        }
-        
-        .team-card-fero {
-          animation: wobble 2s ease-in-out infinite, float 3s ease-in-out infinite 0.5s;
-        }
-        
-        .team-card-subzero {
-          animation: wobble 2s ease-in-out infinite 0.2s, float 3s ease-in-out infinite;
-        }
-        
         .title-bounce {
           animation: bounce 2s ease-in-out infinite;
-        }
-        
-        .emoji-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        
-        .emoji-spin {
-          animation: spin 3s linear infinite;
         }
         
         .text-pulse {
           animation: pulse 2s ease-in-out infinite;
         }
-        
-        .star {
-          animation: twinkle 2s ease-in-out infinite;
-        }
-        
-        .moon {
-          animation: moonGlow 4s ease-in-out infinite;
-        }
-        
-        /* Montanhas */
-        .mountain {
-          position: absolute;
-          bottom: 0;
-          background: linear-gradient(135deg, #cc4400 0%, #ff6600 50%, #ff8833 100%);
-          clip-path: polygon(0% 100%, 50% 30%, 100% 100%);
-        }
-        
-        .mountain-left {
-          left: 0;
-          width: 300px;
-          height: 400px;
-          opacity: 0.8;
-        }
-        
-        .mountain-right {
-          right: 0;
-          width: 280px;
-          height: 350px;
-          opacity: 0.8;
-        }
-        
-        .mountain-middle {
-          left: 35%;
-          width: 250px;
-          height: 300px;
-          opacity: 0.6;
-          background: linear-gradient(135deg, #884400 0%, #cc6600 50%, #ff7722 100%);
-        }
       `}</style>
-
-      {/* Montanhas */}
-      <div className="mountain mountain-left" />
-      <div className="mountain mountain-middle" />
-      <div className="mountain mountain-right" />
-
-      {/* Lua grande */}
-      <div className="moon" style={{
-        position: "absolute",
-        width: "300px",
-        height: "300px",
-        background: "radial-gradient(circle at 30% 30%, #FFE5B4, #FF8C00, #CC4400)",
-        borderRadius: "50%",
-        top: "-50px",
-        left: "5%",
-        opacity: "0.9",
-        zIndex: 2
-      }} />
-
-      {/* Planeta azul à direita */}
-      <div className="planet" style={{
-        position: "absolute",
-        width: "120px",
-        height: "120px",
-        background: "radial-gradient(circle at 35% 35%, #87CEEB, #4A90E2)",
-        borderRadius: "50%",
-        top: "15%",
-        right: "15%",
-        opacity: "0.7",
-        zIndex: 1
-      }} />
-
-      {/* Planeta menor no topo direito */}
-      <div style={{
-        position: "absolute",
-        width: "40px",
-        height: "40px",
-        background: "#6B9BD1",
-        borderRadius: "50%",
-        top: "10%",
-        right: "25%",
-        opacity: "0.5",
-        zIndex: 1
-      }} />
-
-      {/* Estrelas */}
-      {Array.from({ length: 60 }).map((_, i) => (
-        <div
-          key={i}
-          className="star"
-          style={{
-            position: "absolute",
-            width: Math.random() * 3 + "px",
-            height: Math.random() * 3 + "px",
-            background: "#fff",
-            borderRadius: "50%",
-            top: Math.random() * 60 + "%",
-            left: Math.random() * 100 + "%",
-            zIndex: 1,
-            animationDelay: Math.random() * 2 + "s"
-          }}
-        />
-      ))}
 
       <button 
         onClick={() => navigate("/")}
@@ -223,81 +81,39 @@ export default function Team() {
         <p className="text-pulse" style={{ fontSize: "24px", color: "#fff", fontWeight: "bold", textShadow: "2px 2px 0px #000" }}>Meet the CroCrocs Legends!</p>
       </div>
 
-      <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "stretch", maxWidth: "1100px", width: "100%", flexWrap: "wrap", zIndex: 10, position: "relative" }}>
-        {/* Feromonthes Card */}
-        <div 
-          className="team-card-fero"
-          style={{ 
-            flex: "1 1 350px",
-            background: "linear-gradient(135deg, #FF6B6B 0%, #FFD93D 50%, #6BCB77 100%)",
-            borderRadius: "30px",
-            padding: "15px",
-            textAlign: "center",
-            boxShadow: "0 15px 40px rgba(0,0,0,0.3)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "flex-end",
-            minHeight: "500px",
-            border: "5px dashed #fff",
-            position: "relative",
-            cursor: "pointer",
-            transition: "transform 0.3s"
-          }}
+      <div style={{ display: "flex", gap: "60px", justifyContent: "center", alignItems: "flex-end", maxWidth: "1200px", width: "100%", flexWrap: "wrap", zIndex: 10, position: "relative" }}>
+        {/* Feromonthes */}
+        <div style={{ textAlign: "center", cursor: "pointer", transition: "transform 0.3s" }}
           onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
           onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
         >
-          <div className="emoji-spin" style={{ position: "absolute", top: "15px", right: "15px", fontSize: "40px" }}>🦖</div>
-          <div className="emoji-float" style={{ position: "absolute", top: "15px", left: "15px", fontSize: "35px" }}>✨</div>
-          
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2Fev4YTkf9rvB_eHoMedoI8%2Fteam_godzilla.png"
             alt="Feromonthes"
-            style={{ width: "100%", height: "300px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
+            style={{ width: "350px", height: "350px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 10px 30px rgba(0,0,0,0.4))" }}
           />
           
-          <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#000", marginBottom: "5px", textShadow: "2px 2px 0px #fff" }}>FEROMONTHES</h2>
-          <p className="emoji-float" style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px" }}>✨ CREATIVE BOSS ✨</p>
+          <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>FEROMONTHES</h2>
+          <p style={{ fontSize: "16px", color: "#fff", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 20px", borderRadius: "20px", display: "inline-block", marginTop: "10px" }}>✨ CREATIVE BOSS ✨</p>
         </div>
 
-        {/* Subzero Card */}
-        <div 
-          className="team-card-subzero"
-          style={{ 
-            flex: "1 1 350px",
-            background: "linear-gradient(135deg, #4ECDC4 0%, #44A08D 50%, #087E8B 100%)",
-            borderRadius: "30px",
-            padding: "15px",
-            textAlign: "center",
-            boxShadow: "0 15px 40px rgba(0,0,0,0.3)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "flex-end",
-            minHeight: "500px",
-            border: "5px dashed #fff",
-            position: "relative",
-            cursor: "pointer",
-            transition: "transform 0.3s"
-          }}
+        {/* Subzero */}
+        <div style={{ textAlign: "center", cursor: "pointer", transition: "transform 0.3s" }}
           onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
           onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
         >
-          <div className="emoji-spin" style={{ position: "absolute", top: "15px", left: "15px", fontSize: "40px" }}>❄️</div>
-          <div className="emoji-float" style={{ position: "absolute", top: "15px", right: "15px", fontSize: "35px" }}>⚡</div>
-          
           <img 
             src="https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FyWFZy5tNBRVfIEzEvU1Qp%2Fteam_subzero_v2.png"
             alt="Subzero"
-            style={{ width: "100%", height: "300px", objectFit: "cover", marginBottom: "15px", filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))", borderRadius: "15px" }}
+            style={{ width: "350px", height: "350px", objectFit: "contain", marginBottom: "20px", filter: "drop-shadow(0 10px 30px rgba(0,0,0,0.4))" }}
           />
           
-          <h2 className="text-pulse" style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
-          <p className="emoji-float" style={{ fontSize: "16px", color: "#000", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 18px", borderRadius: "20px" }}>⚡ TECH WIZARD ⚡</p>
+          <h2 style={{ fontSize: "32px", fontWeight: "900", color: "#fff", marginBottom: "5px", textShadow: "2px 2px 0px #000" }}>SUBZERO</h2>
+          <p style={{ fontSize: "16px", color: "#fff", fontWeight: "bold", backgroundColor: "rgba(255,255,255,0.9)", padding: "10px 20px", borderRadius: "20px", display: "inline-block", marginTop: "10px" }}>⚡ TECH WIZARD ⚡</p>
         </div>
       </div>
 
-      <div className="emoji-float" style={{ marginTop: "50px", fontSize: "50px", textAlign: "center", zIndex: 10, position: "relative" }}>
+      <div style={{ marginTop: "80px", fontSize: "50px", textAlign: "center", zIndex: 10, position: "relative" }}>
         🐊 🎮 🎨 💻 🐊
       </div>
     </div>
