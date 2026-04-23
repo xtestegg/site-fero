@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from "wouter";
 
 // CDN Asset URLs
 const ASSETS = {
@@ -88,6 +89,7 @@ function Fireflies({ count = 20 }: { count?: number }) {
 }
 
 export default function Home() {
+  const [, navigate] = useLocation();
   const [showContent, setShowContent] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
