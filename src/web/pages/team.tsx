@@ -49,27 +49,29 @@ export default function Team() {
           position: "absolute", 
           top: "20px", 
           left: "20px", 
-          padding: "0", 
-          width: "60px",
-          height: "60px",
-          background: "linear-gradient(135deg, #FF1493, #9932CC)",
+          padding: "12px 30px", 
+          background: "linear-gradient(135deg, #FF1493 0%, #FF69B4 50%, #9932CC 100%)",
           color: "#fff", 
-          border: "4px solid #fff",
-          borderRadius: "50%",
+          border: "none", 
+          borderRadius: "50px", 
           cursor: "pointer", 
           fontWeight: "900", 
-          fontSize: "28px",
-          boxShadow: "0 8px 20px rgba(255, 20, 147, 0.5), inset 0 2px 5px rgba(255,255,255,0.3)",
+          fontSize: "16px",
+          boxShadow: "0 10px 30px rgba(255, 20, 147, 0.5)",
           zIndex: 100,
           transition: "all 0.3s",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center"
+          letterSpacing: "0.08em"
         }}
-        onMouseOver={(e) => e.target.style.transform = "scale(1.15) rotate(360deg)"}
-        onMouseOut={(e) => e.target.style.transform = "scale(1) rotate(0deg)"}
+        onMouseOver={(e) => {
+          e.target.style.transform = "scale(1.1)";
+          e.target.style.boxShadow = "0 15px 40px rgba(255, 20, 147, 0.7)";
+        }}
+        onMouseOut={(e) => {
+          e.target.style.transform = "scale(1)";
+          e.target.style.boxShadow = "0 10px 30px rgba(255, 20, 147, 0.5)";
+        }}
       >
-        ←
+        ← BACK HOME
       </button>
 
       <div style={{ textAlign: "center", marginBottom: "50px", zIndex: 10, position: "relative" }}>
