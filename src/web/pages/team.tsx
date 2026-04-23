@@ -6,7 +6,10 @@ export default function Team() {
   return (
     <div style={{ 
       minHeight: "100vh", 
-      background: "linear-gradient(180deg, #2a1f4d 0%, #3d2a5c 20%, #5a3a70 40%, #d4724a 60%, #f5a66b 80%, #ff9d5c 100%)",
+      backgroundImage: "url('https://storage.googleapis.com/runable-templates/cli-uploads%2FfP0dpAwUfkCMLCPXxJZ9KSSaVONO53I9%2FkBT2nURItXbXtdUfXcRrK%2FCaptura_de_tela_2026-04-23_174534_qEdqmP.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
       padding: "40px 20px", 
       display: "flex", 
       flexDirection: "column", 
