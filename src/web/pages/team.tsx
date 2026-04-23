@@ -3,6 +3,16 @@ import { useLocation } from "wouter";
 export default function Team() {
   const [, navigate] = useLocation();
 
+  // Gerar partículas aleatórias
+  const particles = Array.from({ length: 30 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    delay: Math.random() * 5,
+    duration: Math.random() * 3 + 2,
+    size: Math.random() * 4 + 2,
+  }));
+
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%)", backgroundSize: "400% 400%", animation: "gradient 15s ease infinite", padding: "40px 20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
       <style>{`
@@ -37,6 +47,32 @@ export default function Team() {
           50% { transform: rotate(2deg); }
         }
         
+        @keyframes rise {
+          0% {
+            bottom: -50px;
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            bottom: 100vh;
+            opacity: 0;
+            transform: translateX(100px);
+          }
+        }
+        
+        .particle {
+          position: absolute;
+          background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0));
+          border-radius: 50%;
+          pointer-events: none;
+          animation: rise linear infinite;
+        }
+        
         .team-card-fero {
           animation: wobble 2s ease-in-out infinite, float 3s ease-in-out infinite 0.5s;
         }
@@ -61,6 +97,22 @@ export default function Team() {
           animation: pulse 2s ease-in-out infinite;
         }
       `}</style>
+
+      {/* Partículas animadas */}
+      {particles.map(p => (
+        <div
+          key={p.id}
+          className="particle"
+          style={{
+            left: `${p.left}%`,
+            bottom: "0",
+            width: `${p.size}px`,
+            height: `${p.size}px`,
+            animationDuration: `${p.duration}s`,
+            animationDelay: `${p.delay}s`,
+          }}
+        />
+      ))}
 
       <button 
         onClick={() => navigate("/")}
